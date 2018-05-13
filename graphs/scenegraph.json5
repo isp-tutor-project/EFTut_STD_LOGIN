@@ -1,0 +1,5204 @@
+
+{
+
+	"SISP_SIGNIN":
+	{	
+		"COMMENT":"TED Introduction sequence...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Welcome...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO1",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"INTRO2" }
+							]
+					},
+					
+			"INTRO2":{"COMMENT":"Welcome...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO2",
+					"preenter":"",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"INTRO3" }
+							]
+					},					
+										
+			"INTRO3":{"COMMENT":"Welcome...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO3",
+					"preenter":"",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"INTRO4" }
+							]
+					},					
+										
+			"INTRO4":{"COMMENT":"Welcome...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO4",
+					"preenter":"",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"INTRO5" }
+							]
+					},					
+										
+			"INTRO5":{"COMMENT":"Welcome...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO5",
+					"preenter":"",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"INTRO6" }
+							]
+					},					
+										
+			"INTRO6":{"COMMENT":"Welcome...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO6",
+					"preenter":"",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"INTRO7" }
+							]
+					},					
+										
+			"INTRO7":{"COMMENT":"Welcome...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO7",
+					"preenter":"",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"INTRO8" }
+							]
+					},					
+										
+			"INTRO8":{"COMMENT":"Welcome...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO8",
+					"preenter":"",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE" }
+							]
+					},					
+										
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"INTRO1":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CTEDIntro1", "features":""}
+				]
+			},
+			
+			"INTRO2":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CTEDIntro2", "features":""}
+				]
+			},
+			
+			"INTRO3":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CTEDIntro3", "features":""}
+				]
+			},
+			
+			"INTRO4":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CTEDIntro4", "features":""}
+				]
+			},
+			
+			"INTRO5":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CTEDIntro5", "features":""}
+				]
+			},
+			
+			"INTRO6":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CTEDIntro6", "features":""}
+				]
+			},
+			
+			"INTRO7":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CTEDIntro7", "features":""}
+				]
+			},
+			
+			"INTRO8":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CTEDIntro8", "features":""}
+				]
+			}
+			
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}
+		
+	},
+	
+	
+	"SIntroAnimation.1.0":
+	{	
+		"COMMENT":"Today we're going to...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Today we're going to learn how to design good ...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO_A.0",
+					 "preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"INTRO_A.1" }
+							]
+					},
+					
+			"INTRO_A.1":{"COMMENT":"For example let's say ...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO_A.1",
+					 "preenter":"{ fComplete=false; updateNav(); }",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"INTRO_A.2" }
+							]
+					},
+					
+			"INTRO_A.2":{"COMMENT":"But there are many other factors ...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO_A.2",
+					 "preenter":"{ fComplete=false; updateNav(); }",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"INTRO_A.3" }
+							]
+					},
+					
+			"INTRO_A.3":{"COMMENT":"A good experiment would let you ...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO_A.3",
+					 "preenter":"{ fComplete=false; updateNav(); }",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"INTRO_B.3" }
+							]
+					},
+					
+					
+			"INTRO_B.0":{"COMMENT":"Because we want to teach you ...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO_B.0",
+					 "preenter":"{ fComplete=false; updateNav(); }",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"INTRO_B.1" }
+							]
+					},
+					
+			"INTRO_B.1":{"COMMENT":"Some of them will be good ...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO_B.1",
+					 "preenter":"{ fComplete=false; updateNav(); }",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"INTRO_B.2" }
+							]
+					},
+					
+			"INTRO_B.2":{"COMMENT":"Some of them will be bad ...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO_B.2",
+					 "preenter":"{ fComplete=false; updateNav(); }",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"INTRO_B.3" }
+							]
+					},
+					
+			"INTRO_B.3":{"COMMENT":"For some of these experiments...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"INTRO_B.3",
+					 "preenter":"{ fComplete=false; updateNav(); }",
+					 "preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},					
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}					
+					
+					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"INTRO_A.0":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZLessonIntroAudio1A.0", "features":""}
+				]
+			},
+			
+			"INTRO_A.1":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZLessonIntroAudio1A.1", "features":""}
+				]
+			},
+			
+			"INTRO_A.2":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZLessonIntroAudio1A.2", "features":""}					
+				]
+			},
+			
+			"INTRO_A.3":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZLessonIntroAudio1A.3", "features":""}					
+				]
+			},
+			
+			"INTRO_B.0":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZLessonIntroAudio1B.0", "features":""}
+				]
+			},
+			
+			"INTRO_B.1":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZLessonIntroAudio1B.1", "features":""}
+				]
+			},
+			
+			"INTRO_B.2":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZLessonIntroAudio1B.2", "features":""}					
+				]
+			},
+			
+			"INTRO_B.3":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZLessonIntroAudio1B.3", "features":""}					
+				]
+			}
+			
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+
+			"SKILL_R2_PASS" :{"cmd":"exec","code":"{return  (gTutor.ktSkills['rule2'].queryBelief() >= 0.95); }"}
+		}
+		
+	},
+
+
+
+	"SSbSQuick":
+	{	
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+						
+			"root":{"COMMENT":"Let's Try Another - SegueB.RN.QN",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"SegueB.RN.QN",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+								{"constraint":"","edge":"Quest.R0.QN"}
+							]
+					},					
+						
+			"Quest.R0.QN":{"COMMENT" : "Say you're asked to design an experiment... ",
+							"type":"node",
+							"subtype":"module", 
+							"name":"Quest.R0.QN",
+							"preenter":"{curRule=0; setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+							"preexit" :"{testTVSelection();}",
+							"edges":
+									[
+										{"constraint":"FTR_WRONG","edge":"WRONG.R0.QN"},
+										{"constraint":"FTR_RIGHT","edge":"RIGHT.R0.QN"}
+									]
+					},
+					
+			"WRONG.R0.QN":{"COMMENT":"Actually that is not the one... ",
+						 "type":"node",
+						 "subtype":"module", 
+						 "name":"WRONG.R0.QN",
+						 "preenter":"",
+						 "preexit":"{testTVSelection();}",
+						 "edges":
+								[
+									{"constraint":"FTR_WRONG","edge":"WRONG.R0.QN"},
+									{"constraint":"","edge":"RIGHT.R0.QN"}
+								]
+					},
+
+
+			"RIGHT.R0.QN":{"COMMENT":"That's Right, You've correctly... ",
+						 "type":"node",
+						 "subtype":"module", 
+						 "name":"RIGHT.R0.QN",
+						 "preenter":"{ SD1tableA.listenToRow(CurVarRow, false, false); hideChild('SrowHighlight'); fComplete=false; updateNav(); }",
+						 "preexit":"{updateKT(); }",
+						 "edges":
+								[
+									{"constraint":"SKILL_R0_NOTMAX_AND_FAIL","edge":"NEXTSCENE"},							
+									{"constraint":"","edge":"SegueA.R01.QN"}
+								]
+					},
+					
+					
+			"SegueA.R01.QN":{"COMMENT":"Now you've learned the first ... ",
+						 "type":"node",
+						 "subtype":"module", 
+						 "name":"SegueA.R01.QN",
+						 "preenter":"{ hideChild('SrowHighlight'); }",
+						 "preexit":"",
+						 "edges":
+								[
+									{"constraint":"","edge":"Quest.R1.QN"}
+								]
+					},
+					
+					
+			"Quest.R1.QN":{"COMMENT" : "Now choose a xxx ... ",
+						"type":"node",
+						"subtype":"module", 
+						"name":"Quest.R1.QN",
+						"preenter":"{ curRule=1; fComplete=false; updateNav(); }",
+						"preexit" :"{ testRowComplete(); }",
+						"edges":
+								[
+									{"constraint":"FTR_INCOMPLETE","edge":"Quest.R1.QN"},
+									{"constraint":"FTR_WRONG","edge":"WRONG.R1.QN"},
+									{"constraint":"FTR_RIGHT","edge":"RIGHT.R1.QN"}
+								]
+					},
+					
+
+			"WRONG.R1.QN":{"COMMENT":"Actually that is not the one... ",
+						 "type":"node",
+						 "subtype":"module", 
+						 "name":"WRONG.R1.QN",
+						 "preenter":"",
+						 "preexit":"{ testRowComplete(); }",
+						 "edges":
+								[
+									{"constraint":"FTR_WRONG","edge":"WRONG.R1.QN"},
+									{"constraint":"","edge":"RIGHT.R1.QN"}
+								]
+					},
+
+
+
+			"RIGHT.R1.QN":{"COMMENT":"That's Right, You've correctly... ",
+						 "type":"node",
+						 "subtype":"module", 
+						 "name":"RIGHT.R1.QN",
+						 "preenter":"{SD1tableA.hiLightRow(curVarRow, false, 0x00BB00, 0.8);  SD1tableA.enableRow(curVarRow, false); fComplete=false; updateNav(); }",
+						 "preexit":"{updateKT(); }",
+						 "edges":
+								[
+									{"constraint":"HIGH_R1_PMAXORPASS_AND_EIANOTDONE","edge":"NEXTSCENE"},								
+									{"constraint":"SKILL_R1_NOTMAX_AND_FAIL","edge":"NEXTSCENE"},							
+									{"constraint":"","edge":"SegueA.R12.QN"}
+								]
+					},
+					
+					
+			"SegueA.R12.QN":{"COMMENT":"And now you've learned the second step... ",
+						 "type":"node",
+						 "subtype":"module", 
+						 "name":"SegueA.R12.QN",
+						 "preenter":"",
+						 "preexit":"",
+						 "edges":
+								[
+									{"constraint":"","edge":"Quest.R2A.QN"}
+								]
+					},
+					
+					
+			"Quest.R2A.QN":{"COMMENT" : "Now you must choose what to do with the other... ",
+							"type":"node",
+							"subtype":"module", 
+							"name":"Quest.R2A.QN",
+							"preenter":"{ curRule=2; }",
+							"preexit" :"{ testRowComplete();}",
+							"edges":
+									[
+										{"constraint":"FTR_INCOMPLETE","edge":"Quest.R2A.QN"},
+										{"constraint":"FTR_WRONG","edge":"WRONG.R2A.QN"},
+										{"constraint":"FTR_RIGHT","edge":"RIGHT.R2A.QN"}
+									]
+					},
+					
+
+			"WRONG.R2A.QN":{"COMMENT":"Actually anything you're not testing... ",
+							 "type":"node",
+							 "subtype":"module", 
+							 "name":"WRONG.R2.QN",
+							 "preenter":"",
+							 "preexit":"{testRowComplete();}",
+							 "edges":
+									[
+										{"constraint":"FTR_WRONG","edge":"WRONG.R2A.QN"},
+										{"constraint":"","edge":"RIGHT.R2A.QN"}
+									]
+					},
+
+
+			"RIGHT.R2A.QN":{"COMMENT":"You're Right... ",
+							 "type":"node",
+						     "subtype":"module", 
+							 "name":"RIGHT.R2.QN",
+							 "preenter":"{ SD1tableA.hiLightRow(curVarRow, false, 0x00FF00, 0.8);  SD1tableA.enableRow(curVarRow, false); fComplete=false; updateNav(); }",
+							 "preexit":"",
+							 "edges":
+									[
+										{"constraint":"","edge":"Quest.R2B.QN"}
+									]
+					},
+					
+					
+					
+			"Quest.R2B.QN":{"COMMENT" : "Now you must choose what to do with the other... ",
+							"type":"node",
+							"subtype":"module", 
+							"name":"Quest.R2B.QN",
+							"preenter":"{}",
+							"preexit" :"{testRowComplete();}",
+							"edges":
+									[
+										{"constraint":"FTR_INCOMPLETE","edge":"Quest.R2B.QN"},
+										{"constraint":"FTR_WRONG","edge":"WRONG.R2B.QN"},
+										{"constraint":"FTR_RIGHT","edge":"RIGHT.R2B.QN"}
+									]
+					},
+					
+
+			"WRONG.R2B.QN":{"COMMENT":"Actually anything you're not testing... ",
+							 "type":"node",
+							 "subtype":"module", 
+							 "name":"WRONG.R2.QN",
+							 "preenter":"",
+							 "preexit":"{testRowComplete();}",
+							 "edges":
+									[
+										{"constraint":"FTR_WRONG","edge":"WRONG.R2B.QN"},
+										{"constraint":"","edge":"RIGHT.R2B.QN"}
+									]
+					},
+
+
+
+			"RIGHT.R2B.QN":{"COMMENT":"You're Right... ",
+							 "type":"node",
+							 "subtype":"module", 
+							 "name":"RIGHT.R2.QN",
+							 "preenter":"{SD1tableA.hiLightRow(curVarRow, false, 0x00FF00, 0.8);  SD1tableA.enableRow(curVarRow, false); fComplete=false; updateNav(); }",
+							 "preexit":"",
+							 "edges":
+									[
+										{"constraint":"","edge":"Quest.R2C.QN"}
+									]
+					},
+					
+					
+					
+			"Quest.R2C.QN":{"COMMENT" : "Now you must choose what to do with the other... ",
+							"type":"node",
+							"subtype":"module", 
+							"name":"Quest.R2C.QN",
+							"preenter":"{}",
+							"preexit" :"{testRowComplete();}",
+							"edges":
+									[
+										{"constraint":"FTR_INCOMPLETE","edge":"Quest.R2C.QN"},
+										{"constraint":"FTR_WRONG","edge":"WRONG.R2C.QN"},
+										{"constraint":"FTR_RIGHT","edge":"RIGHT.R2C.QN"}
+									]
+					},
+					
+
+			"WRONG.R2C.QN":{"COMMENT":"Actually anything you're not testing... ",
+							 "type":"node",
+							 "subtype":"module", 
+							 "name":"WRONG.R2.QN",
+							 "preenter":"",
+							 "preexit":"{testRowComplete();}",
+							 "edges":
+									[
+										{"constraint":"FTR_WRONG","edge":"WRONG.R2C.QN"},
+										{"constraint":"","edge":"RIGHT.R2C.QN"}
+									]
+					},
+
+
+
+			"RIGHT.R2C.QN":{"COMMENT":"You're Right... ",
+							 "type":"node",
+							 "subtype":"module", 
+							 "name":"RIGHT.R2C.QN",
+							 "preenter":"{SD1tableA.hiLightRow(curVarRow, false, 0x00FF00, 0.8);  SD1tableA.enableRow(curVarRow, false); fComplete=false; updateNav(); }",
+							 "preexit":"{updateKT(); }",
+							 "edges":
+									[
+										{"constraint":"SKILL_R2_NOTMAX_AND_FAIL","edge":"NEXTSCENE"},															
+										{"constraint":"FTR_NOTMAXR2","edge":"SEGUE.R012"},
+										{"constraint":"","edge":"SEGUE.R012MAX"}												
+									]
+					},
+					
+
+			"SEGUE.R012":{  "COMMENT":"You have now learned the third step...",
+ 						    "COMMENT":"Let's try just a couple of more ...",				
+						 	"type":"node",
+						 	"subtype":"module", 
+						 	"name":"SEGUE.R012",
+						 	"preenter":"",
+						 	"preexit":"",
+						 	"edges":
+								[
+									{"constraint":"","edge":"NEXTSCENE"}
+								]
+					},
+					
+
+			"SEGUE.R012MAX":{  "COMMENT":"You have been working on the third step...",
+	 						   "COMMENT":"Let's try just a couple of more ...",				
+							 	"type":"node",
+							 	"subtype":"module", 
+							 	"name":"SEGUE.R012MAX",
+							 	"preenter":"",
+							 	"preexit":"",
+							 	"edges":
+									[
+										{"constraint":"","edge":"NEXTSCENE"}
+									]
+					},
+					
+
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+						 "type":"node",
+						 "subtype":"action", 
+						 "name":"NEXTSCENE",
+						 "preenter":"",
+						 "preexit" :"{setButtonBehavior('incrScene');}",					 
+						 "edges":
+								[
+								]
+					}					
+					
+		},		
+
+
+		"CChoiceSets":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CChoiceSets  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CChoiceSets  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+
+			"Quest.R2A.Q1Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2A_Q1AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2A_Q1BQ" , "odds":"0.2"}
+				]
+			},
+			"Quest.R2A.Q2Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2A_Q2AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2A_Q2BQ" , "odds":"0.2"}
+				]
+			},
+			"Quest.R2A.Q3Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2A_Q3AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2A_Q3BQ" , "odds":"0.2"}
+				]
+			},
+			"Quest.R2A.Q4Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2A_Q4AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2A_Q4BQ" , "odds":"0.2"}
+				]
+			},
+								
+			"Quest.R2B.Q1Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2B_Q1AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2B_Q1BQ" , "odds":"0.2"}
+				]
+			},
+			"Quest.R2B.Q2Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2B_Q2AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2B_Q2BQ" , "odds":"0.2"}
+				]
+			},
+			"Quest.R2B.Q3Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2B_Q3AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2B_Q3BQ" , "odds":"0.2"}
+				]
+			},
+			"Quest.R2B.Q4Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2B_Q4AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2B_Q4BQ" , "odds":"0.2"}
+				]
+			},
+
+								
+			"Quest.R2C.Q1Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2C_Q1AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2C_Q1BQ" , "odds":"0.2"}
+				]
+			},
+			"Quest.R2C.Q2Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2C_Q2AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2C_Q2BQ" , "odds":"0.2"}
+				]
+			},
+			"Quest.R2C.Q3Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2C_Q3AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2C_Q3BQ" , "odds":"0.2"}
+				]
+			},
+			"Quest.R2C.Q4Q":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Quest_R2C_Q4AQ" , "odds":"1.1"},
+					{"classname":"CSSbS_Quest_R2C_Q4BQ" , "odds":"0.2"}
+				]
+			},
+								
+			"AFFIRMATION.N":
+			{
+				"COMMENT":"",
+				"type":"choiceset",
+				"replace":false,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CS_Affirm_A" , "odds":"1"},
+					{"classname":"CS_Affirm_B" , "odds":"1"},
+					{"classname":"CS_Affirm_C" , "odds":"1"},
+					{"classname":"CS_Affirm_D" , "odds":"1"},
+					{"classname":"CS_Affirm_E" , "odds":"1"},
+					{"classname":"CS_Affirm_F" , "odds":"1"}
+				]
+			},
+			
+			"SegueB.RN.CS":
+			{
+				"COMMENT":"Let's try another...",
+				"type":"choiceset",
+				"replace":false,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_SegueB_RN_QN" 	   , "odds":"1"},
+					{"classname":"CSSbS_SegueB_RN_QN_ALT1" , "odds":"1"},
+					{"classname":"CSSbS_SegueB_RN_QN_ALT2" , "odds":"1"},
+					{"classname":"CSSbS_SegueB_RN_QN_ALT3" , "odds":"1"}
+				]
+			},
+			
+			"WRONG.R0.CS1":
+			{
+				"COMMENT":"Let's try another...",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Wrong_R0_QN" 	   , "odds":"1.0" },
+					{"classname":"CSSbS_Wrong_R0_Q1" 	   , "odds":"0.1" }
+				]
+			},			
+						
+			"WRONG.R0.CS2":
+			{
+				"COMMENT":"Let's try another...",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Wrong_R0_QN" 	   , "odds":"1.0" },
+					{"classname":"CSSbS_Wrong_R0_Q2" 	   , "odds":"0.1" }
+				]
+			},			
+						
+			"WRONG.R0.CS3":
+			{
+				"COMMENT":"Let's try another...",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Wrong_R0_QN" 	   , "odds":"1.0" },
+					{"classname":"CSSbS_Wrong_R0_Q3" 	   , "odds":"0.1" }
+				]
+			},			
+						
+			"WRONG.R0.CS4":
+			{
+				"COMMENT":"Let's try another...",
+				"type":"choiceset",
+				"replace":true,
+				"cycle":"1", 
+				"choices":		
+				[
+					{"classname":"CSSbS_Wrong_R0_QN" 	   , "odds":"1.0" },
+					{"classname":"CSSbS_Wrong_R0_Q4" 	   , "odds":"0.1" }
+				]
+			}			
+						
+		},
+				
+						
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"Quest.R0.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbS_Quest_R0_Q1Q", "features":"FTR_SBS_Q1Q"},
+					{"classname":"CSSbS_Quest_R0_Q2Q", "features":"FTR_SBS_Q2Q"},
+					{"classname":"CSSbS_Quest_R0_Q3Q", "features":"FTR_SBS_Q3Q"},
+					{"classname":"CSSbS_Quest_R0_Q4Q", "features":"FTR_SBS_Q4Q"}
+				]
+			},
+			
+			"WRONG.R0.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"choiceset":"WRONG.R0.CS1", "features":"FTR_SBS_Q1Q"},
+					{"choiceset":"WRONG.R0.CS2", "features":"FTR_SBS_Q2Q"},
+					{"choiceset":"WRONG.R0.CS3", "features":"FTR_SBS_Q3Q"},
+					{"choiceset":"WRONG.R0.CS4", "features":"FTR_SBS_Q4Q"}
+				]
+			},
+			
+			"RIGHT.R0.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"choiceset":"AFFIRMATION.N", "features":""},
+					{"classname":"CSSbS_Right_R0B_QN", "features":"", "pid":"R0QN", "$P":"1|.3", "cycle":"1" }
+				]
+			},
+
+			
+			"SegueA.R01.QN":
+			{
+				"COMMENT":"You've now learned the first ...",
+				"COMMENT":"Let's move on to the second step...",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbS_SegueA_R01A1_QNQ", "features":"PSBS_R0_LRN", "pid":"R01SEGUEA", "$P":"1|0", "cycle":"1" },
+					{"classname":"CSSbS_SegueA_R01A2_QNQ", "features":"MAX_PSBS_R0", "pid":"R01SEGUEA", "$P":"1|0", "cycle":"1" },
+					
+					{"classname":"CSSbS_SegueA_R01B_QNQ", "features":"", "pid":"R01SEGUEB", "$P":"0|1", "cycle":"1" }		
+				]
+			},
+			
+			"Quest.R1.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbS_Quest_R1_Q1Q" , "features":"FTR_SBS_Q1Q"},
+					{"classname":"CSSbS_Quest_R1_Q2Q" , "features":"FTR_SBS_Q2Q"},
+					{"classname":"CSSbS_Quest_R1_Q3Q" , "features":"FTR_SBS_Q3Q"},
+					{"classname":"CSSbS_Quest_R1_Q4Q" , "features":"FTR_SBS_Q4Q"}
+				]
+			},
+			
+			"WRONG.R1.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbS_Wrong_R1_QN", "features":""}		
+				]
+			},
+		
+			"RIGHT.R1.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"choiceset":"AFFIRMATION.N", "features":""},
+					{"classname":"CSSbS_Right_R1B_QN", "features":"", "pid":"R1QN", "$P":"1|.3", "cycle":"1" }
+				]
+			},
+		
+			"SegueA.R12.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbS_SegueA_R12A1_QNQ", "features":"PSBS_R1_LRN", "pid":"R12SEGUEA", "$P":"1|0", "cycle":"1" },
+					{"classname":"CSSbS_SegueA_R12A2_QNQ", "features":"MAX_PSBS_R1", "pid":"R12SEGUEA", "$P":"1|0", "cycle":"1" },
+					
+					{"classname":"CSSbS_SegueA_R12B_QNQ", "features":"", "pid":"R12SEGUEB", "$P":"0|1", "cycle":"1" }		
+				]
+			},
+			
+			"Quest.R2A.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbS_Intro_R2AQ"	   , "features":"FTR_SBS_Q1Q",  "pid":"PSBSR2QUEST", "$P":"1|.15", "cycle":"1" },
+					{"classname":"CSSbS_Intro_R2BQ"    , "features":"FTR_SBS_Q1Q"},
+					{"choiceset":"Quest.R2A.Q1Q"       , "features":"FTR_SBS_Q1Q"},
+					{"classname":"CSSbS_Intro_R2AQ"	   , "features":"FTR_SBS_Q2Q",  "pid":"PSBSR2QUEST", "$P":"1|.15", "cycle":"1" },
+					{"classname":"CSSbS_Intro_R2CQ"    , "features":"FTR_SBS_Q2Q"},
+					{"choiceset":"Quest.R2A.Q2Q"       , "features":"FTR_SBS_Q2Q"},
+					{"classname":"CSSbS_Intro_R2AQ"	   , "features":"FTR_SBS_Q3Q",  "pid":"PSBSR2QUEST", "$P":"1|.15", "cycle":"1" },
+					{"classname":"CSSbS_Intro_R2CQ"    , "features":"FTR_SBS_Q3Q"},
+					{"choiceset":"Quest.R2A.Q3Q"       , "features":"FTR_SBS_Q3Q"},
+					{"classname":"CSSbS_Intro_R2AQ"	   , "features":"FTR_SBS_Q4Q",  "pid":"PSBSR2QUEST", "$P":"1|.15", "cycle":"1" },
+					{"classname":"CSSbS_Intro_R2CQ"    , "features":"FTR_SBS_Q4Q"},
+					{"choiceset":"Quest.R2A.Q4Q"  	   , "features":"FTR_SBS_Q4Q"}
+				]
+			},
+			
+			"Quest.R2B.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"choiceset":"Quest.R2B.Q1Q"       , "features":"FTR_SBS_Q1Q"},
+					{"choiceset":"Quest.R2B.Q2Q"       , "features":"FTR_SBS_Q2Q"},
+					{"choiceset":"Quest.R2B.Q3Q"       , "features":"FTR_SBS_Q3Q"},
+					{"choiceset":"Quest.R2B.Q4Q"  	   , "features":"FTR_SBS_Q4Q"}
+				]
+			},
+			
+			"Quest.R2C.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"choiceset":"Quest.R2C.Q1Q"       , "features":"FTR_SBS_Q1Q"},
+					{"choiceset":"Quest.R2C.Q2Q"       , "features":"FTR_SBS_Q2Q"},
+					{"choiceset":"Quest.R2C.Q3Q"       , "features":"FTR_SBS_Q3Q"},
+					{"choiceset":"Quest.R2C.Q4Q"  	   , "features":"FTR_SBS_Q4Q"}
+				]
+			},
+			
+			"WRONG.R2.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbS_Wrong_R2_QN", "features":""}		
+				]
+			},
+			
+			"RIGHT.R2.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"choiceset":"AFFIRMATION.N", "features":""},
+					{"classname":"CSSbS_Right_R2B_QN", "features":"", "pid":"R2QN", "$P":"1|.15", "cycle":"1" }
+				]
+			},
+
+			"RIGHT.R2C.QN":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"choiceset":"AFFIRMATION.N", "features":""},
+					{"classname":"CSSbS_Right_R2C_QN", "features":""}
+				]
+			},
+
+			"SEGUE.R012":
+			{
+				"COMMENT":"You have now learned the third step...",
+				"COMMENT":"Let's try just a couple of more ...",				
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbS_SegueA_R2E1_QNQ", "features":"PSBS_R2_LRN", "pid":"R2ESEGUEA", "$P":"1|0", "cycle":"1" },
+					{"classname":"CSSbS_SegueA_R2E2_QNQ", "features":"MAX_PSBS_R2", "pid":"R2ESEGUEA", "$P":"1|0", "cycle":"1" },
+									
+					{"classname":"CSSbS_SegueC_REE_QNQ", "features":"" }							
+				]
+			},
+
+			"SEGUE.R012MAX":
+			{
+				"COMMENT":"You have been working on the third step...",
+				"COMMENT":"Let's try just a couple of more ...",				
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbS_SegueA_R2E1_QNQ", "features":"PSBS_R2_LRN", "pid":"R2ESEGUEA", "$P":"1|0", "cycle":"1" },
+					{"classname":"CSSbS_SegueA_R2E2_QNQ", "features":"MAX_PSBS_R2", "pid":"R2ESEGUEA", "$P":"1|0", "cycle":"1" },
+									
+					{"classname":"CSSbS_SegueC_REE_QNQ", "features":"" }							
+				]
+			},
+
+			"SegueB.RN.QN":
+			{
+				"COMMENT":"Let's try another...",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"choiceset":"SegueB.RN.CS", "features":"", "pid":"SBSINTRO", "$P":"0|1", "cycle":"1"}
+				]
+			}
+			
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+
+			"HIGHABILITY_EIA_NOTDONE" :{"cmd":"test",   "code":"!FTR_LOWABILITY,!EIA_SEEN"},
+
+			"FTR_WRONG":{"cmd":"test", "code":"FTR_WRONG"},
+			"FTR_RIGHT":{"cmd":"test", "code":"FTR_RIGHT"},
+			
+			"FTR_NOTMAXR2":{"cmd":"test", "code":"!MAX_PSBS_R2"},
+			
+			"FTR_INCOMPLETE":{"cmd":"test", "code":"FTR_INCOMPLETE"},
+			
+			"FTR_SBYS2":{"cmd":"test", "code":"FTR_SBYS2"},
+			
+			"SKILL_R0_NOTMAX_AND_FAIL":{"cmd":"exec", "code":"{ if(incrGlobal('MAX_PSBS_R0') >= 3) { assertFeature('MAX_PSBS_R0'); return false; } else { if(gTutor.ktSkills['rule0'].queryBelief() < 0.93) return true; else { assertFeature('PSBS_R0_LRN'); return false; } } }"},
+			"SKILL_R1_NOTMAX_AND_FAIL":{"cmd":"exec", "code":"{ if(incrGlobal('MAX_PSBS_R1') >= 3) { assertFeature('MAX_PSBS_R1'); return false; } else { if(gTutor.ktSkills['rule1'].queryBelief() < 0.93) return true; else { assertFeature('PSBS_R1_LRN'); return false; } } }"},
+			"SKILL_R2_NOTMAX_AND_FAIL":{"cmd":"exec", "code":"{ if(incrGlobal('MAX_PSBS_R2') >= 3) { assertFeature('MAX_PSBS_R2'); return false; } else { if(gTutor.ktSkills['rule2'].queryBelief() < 0.93) return true; else { assertFeature('PSBS_R2_LRN'); return false; } } }"},
+
+			"HIGH_R1_PMAXORPASS_AND_EIANOTDONE" :{"cmd":"exec","code":"{return (gTutor.testFeatureSet('!EIA_SEEN,!FTR_LOWABILITY') && (gTutor.testFeatureSet('MAX_PSBS_R1') || gTutor.ktSkills['rule1'].queryBelief() >= 0.96)); }"},
+			
+			"SKILL_R0_FAIL":{"cmd":"exec", "code":"{return (gTutor.ktSkills['rule0'].queryBelief() < 0.93);}"},
+			"SKILL_R1_FAIL":{"cmd":"exec", "code":"{return (gTutor.ktSkills['rule1'].queryBelief() < 0.96);}"},
+			"SKILL_R2_FAIL":{"cmd":"exec", "code":"{return (gTutor.ktSkills['rule2'].queryBelief() < 0.96);}"},
+			
+			"SKILL_R01_FAIL":{"cmd":"exec","code":"{return ((gTutor.ktSkills['rule0'].queryBelief() <  0.93) || (gTutor.ktSkills['rule1'].queryBelief() <  0.96));}"},
+			"SKILL_R01_PASS":{"cmd":"exec","code":"{return ((gTutor.ktSkills['rule0'].queryBelief() >= 0.93) && (gTutor.ktSkills['rule1'].queryBelief() >= 0.96));}"},
+				
+			"FTR_PRETEST":{"cmd":"test", "code":"FTR_PRETEST"},
+			"FTR_POSTTEST":{"cmd":"test","code":"FTR_POSTTEST"},
+			"FTR_TYPEA":{"cmd":"test",   "code":"FTR_TYPEA"},
+			"FTR_TYPEB":{"cmd":"test",   "code":"FTR_TYPEB"},
+	
+			"RMPPRE_B_F":{"cmd":"exec","code":"return ((SD1input1 != null) && (SD1input1.selPhraseID == 'NONE'));"},
+	
+			"RMPPRE_C_DA":{"cmd":"exec","code":"return ((SD1input1.selPhraseID == 'PHRASE3') || (SD1input1.selPhraseID == 'PHRASE4') || (SD1input1.selPhraseID == 'PHRASE6'));"},
+			"RMPPRE_C_DB":{"cmd":"exec","code":"return ((SD1input1.selPhraseID == 'PHRASE5') || (SD1input1.selPhraseID == 'PHRASE7') || (SD1input1.selPhraseID == 'PHRASE9') || (SD1input1.selPhraseID == 'PHRASE10'));"},
+			"RMPPRE_C_DC":{"cmd":"exec","code":"return ((SD1input1.selPhraseID == 'PHRASE1'));"},
+			"RMPPRE_C_F" :{"cmd":"exec","code":"return ((SD1input1.selPhraseID == 'PHRASE11'));"}
+		}		
+	},
+
+
+
+
+	"SSbSRule1_1A":
+	{	
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Say you're asked to design an experiment... ",
+					"type":"node",
+					"subtype":"module", 
+					"name":"Q0A",
+					"preenter":"{curRule=0; setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{testTVSelection();}",
+					"edges":
+							[
+								{"constraint":"FTR_WRONG","edge":"Q0A_WRONG"},
+								{"constraint":"FTR_RIGHT","edge":"Q0A_RIGHT"}
+							]
+					},
+					
+			"Q0A_WRONG":{"COMMENT":"Actually the question is asking you... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"Q0A_WRONG",
+					 "preenter":"",
+					 "preexit":"{testTVSelection();}",
+					 "edges":
+							[
+								{"constraint":"FTR_WRONG","edge":"Q0A_WRONG"},
+								{"constraint":"","edge":"Q0A_RIGHT"}
+							]
+					},
+
+			"Q0A_RIGHT":{"COMMENT":"That's Right the question is asking you... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"Q0A_RIGHT",
+					 "preenter":"{retractSceneFeatures(); hideChild('SrowHighlight'); }",
+					 "preexit":"",
+					 "edges":
+							[
+								{"constraint":"","edge":"Q1A"}
+							]
+					},
+
+			"Q1A":{"COMMENT":"Now choose a TV for each ramp...",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"Q1A",
+					 "preenter":"{curRule=1; retractSceneFeatures(); fComplete=false; updateNav();}",
+					 "preexit" :"{testRowComplete();}",
+					 "edges":
+							[
+								{"constraint":"FTR_INCOMPLETE","edge":"Q1A"},
+								{"constraint":"FTR_WRONG","edge":"Q1A_WRONG"},
+								{"constraint":"FTR_RIGHT","edge":"Q1A_RIGHT"}
+							]
+					},
+					
+			"Q1A_WRONG":{"COMMENT":"Actually you need to use different TV... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"Q1A_WRONG",
+					 "preenter":"",
+					 "preexit" :"{testRowComplete();}",
+					 "edges":
+							[
+								{"constraint":"FTR_WRONG","edge":"Q1A_WRONG"},
+								{"constraint":"","edge":"Q1A_RIGHT"}
+							]
+					},
+
+			"Q1A_RIGHT":{"COMMENT":"That's Right you need to use different TV... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"Q1A_RIGHT",
+					 "preenter":"{retractSceneFeatures(); fComplete=false; updateNav(); }",
+					 "preexit" :"{updateKT(); incrGlobal('MAX_CSBS_R01'); }",
+					 "edges":
+							[
+								{"constraint":"","edge":"R2_INTRO"}
+							]
+					},
+
+			"R2_INTRO":{"COMMENT":"Now you must select values for the other parts...",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"R2_INTRO",
+					 "preenter":"{curRule=2; fComplete=false; updateNav();}",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"R2_Q1"}
+							]
+					},
+					
+			"R2_Q1":{"COMMENT":"Make your selections for v1 ... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"R2_Q1",
+					 "preenter":"{fComplete = true; updateNav();}",
+					 "preexit" :"{testRowComplete();}",
+					 "edges":
+							[
+								{"constraint":"FTR_INCOMPLETE","edge":"R2_Q1"},
+								{"constraint":"FTR_WRONG","edge":"R2_Q1_WRONG"},
+								{"constraint":"FTR_RIGHT","edge":"R2_Q1_RIGHT"}
+							]
+					},
+					
+			"R2_Q1_WRONG":{"COMMENT":"Actually you need to use same V1... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"R2_Q1_WRONG",
+					 "preenter":"",
+					 "preexit" :"{testRowComplete();}",
+					 "edges":
+							[
+								{"constraint":"FTR_WRONG","edge":"R2_Q1_WRONG"},
+								{"constraint":"","edge":"R2_Q1_RIGHT"}
+							]
+					},
+
+			"R2_Q1_RIGHT":{"COMMENT":"That's Right you need to use same V1... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"R2_Q1_RIGHT",
+					 "preenter":"{retractSceneFeatures(); fComplete=false; updateNav();}",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"R2_Q2"}
+							]
+					},
+					
+					
+			"R2_Q2":{"COMMENT":"Make your selections for v2 ... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"R2_Q2",
+					 "preenter":"{fComplete = true; updateNav();}",
+					 "preexit" :"{testRowComplete();}",
+					 "edges":
+							[
+								{"constraint":"FTR_INCOMPLETE","edge":"R2_Q2"},
+								{"constraint":"FTR_WRONG","edge":"R2_Q2_WRONG"},
+								{"constraint":"FTR_RIGHT","edge":"R2_Q2_RIGHT"}
+							]
+					},
+					
+			"R2_Q2_WRONG":{"COMMENT":"Actually you need to use same V2... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"R2_Q2_WRONG",
+					 "preenter":"",
+					 "preexit" :"{testRowComplete();}",
+					 "edges":
+							[
+								{"constraint":"FTR_WRONG","edge":"R2_Q2_WRONG"},
+								{"constraint":"","edge":"R2_Q2_RIGHT"}
+							]
+					},
+
+			"R2_Q2_RIGHT":{"COMMENT":"That's Right you need to use same V2... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"R2_Q2_RIGHT",
+					 "preenter":"{retractSceneFeatures(); fComplete=false; updateNav();}",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"R2_Q3"}
+							]
+					},
+					
+					
+			"R2_Q3":{"COMMENT":"Make your selections for V3 ... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"R2_Q3",
+					 "preenter":"{fComplete = true; updateNav();}",
+					 "preexit" :"{testRowComplete();}",
+					 "edges":
+							[
+								{"constraint":"FTR_INCOMPLETE","edge":"R2_Q3"},
+								{"constraint":"FTR_WRONG","edge":"R2_Q3_WRONG"},
+								{"constraint":"FTR_RIGHT","edge":"R2_Q3_RIGHT"}
+							]
+					},
+					
+			"R2_Q3_WRONG":{"COMMENT":"Actually you need to use same V3... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"R2_Q3_WRONG",
+					 "preenter":"",
+					 "preexit" :"{testRowComplete();}",
+					 "edges":
+							[
+								{"constraint":"FTR_WRONG","edge":"R2_Q3_WRONG"},
+								{"constraint":"","edge":"R2_Q3_RIGHT"}
+							]
+					},
+
+			"R2_Q3_RIGHT":{"COMMENT":"That's Right you need to use same V3... ",
+					 "type":"node",
+					 "subtype":"module", 
+					 "name":"R2_Q3_RIGHT",
+					 "preenter":"{retractSceneFeatures(); fComplete=false; updateNav();}",
+					 "preexit" :"{updateKT(); incrGlobal('MAX_CSBS_R2'); }",
+					 "edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					 "subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"Q0A":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule1Part1AS", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule1Part2AS", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule1Part3AS", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule1Part4AS", "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"Q0A_RIGHT":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule1P1ARightS", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule1P2ARightS", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule1P3ARightS", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule1P4ARightS", "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"Q0A_WRONG":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule1P1AWrongS", "features":"FTR_SBS_Q1"},		
+					{"classname":"CSSbSRule1P2AWrongS", "features":"FTR_SBS_Q2"},		
+					{"classname":"CSSbSRule1P3AWrongS", "features":"FTR_SBS_Q3"},		
+					{"classname":"CSSbSRule1P4AWrongS", "features":"FTR_SBS_Q4"}		
+				]
+			},
+			
+			"Q1A":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule1Part1B" , "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule1Part2B" , "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule1Part3B" , "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule1Part4B" , "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"Q1A_RIGHT":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule1P1BRight", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule1P2BRight", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule1P3BRight", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule1P4BRight", "features":"FTR_SBS_Q4"}
+				]
+			},
+		
+			"Q1A_WRONG":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule1P1BWrong", "features":"FTR_SBS_Q1"},		
+					{"classname":"CSSbSRule1P2BWrong", "features":"FTR_SBS_Q2"},	
+					{"classname":"CSSbSRule1P3BWrong", "features":"FTR_SBS_Q3"},	
+					{"classname":"CSSbSRule1P4BWrong", "features":"FTR_SBS_Q4"}		
+				]
+			},
+		
+			"R2_INTRO":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2I1A" 	, "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2I2A" 	, "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2I3A" 	, "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2I4A" 	, "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"R2_Q1":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2P1A" 	, "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2P2A" 	, "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2P3A" 	, "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2P4A" 	, "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"R2_Q1_RIGHT":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2P1ARight", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2P2ARight", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2P3ARight", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2P4ARight", "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"R2_Q1_WRONG":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2P1AWrong", "features":"FTR_SBS_Q1"},		
+					{"classname":"CSSbSRule2P2AWrong", "features":"FTR_SBS_Q2"},	
+					{"classname":"CSSbSRule2P3AWrong", "features":"FTR_SBS_Q3"},	
+					{"classname":"CSSbSRule2P4AWrong", "features":"FTR_SBS_Q4"}		
+				]
+			},
+			
+			"R2_Q2":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2P1B" 	, "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2P2B" 	, "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2P3B" 	, "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2P4B" 	, "features":"FTR_SBS_Q4"}
+				]
+			},
+			"R2_Q2_RIGHT":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2P1BRight", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2P2BRight", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2P3BRight", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2P4BRight", "features":"FTR_SBS_Q4"}
+				]
+			},
+			"R2_Q2_WRONG":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2P1BWrong", "features":"FTR_SBS_Q1"},		
+					{"classname":"CSSbSRule2P2BWrong", "features":"FTR_SBS_Q2"},	
+					{"classname":"CSSbSRule2P3BWrong", "features":"FTR_SBS_Q3"},	
+					{"classname":"CSSbSRule2P4BWrong", "features":"FTR_SBS_Q4"}		
+				]
+			},
+			
+			"R2_Q3":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2P1C" 	, "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2P2C" 	, "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2P3C" 	, "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2P4C" 	, "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"R2_Q3_RIGHT":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2P1CRight", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2P2CRight", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2P3CRight", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2P4CRight", "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"R2_Q3_WRONG":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2P1CWrong", "features":"FTR_SBS_Q1"},		
+					{"classname":"CSSbSRule2P2CWrong", "features":"FTR_SBS_Q2"},	
+					{"classname":"CSSbSRule2P3CWrong", "features":"FTR_SBS_Q3"},	
+					{"classname":"CSSbSRule2P4CWrong", "features":"FTR_SBS_Q4"}		
+				]
+			}							
+										
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+
+			"HIGHABILITY_EIA_NOTDONE" :{"cmd":"test",   "code":"!FTR_LOWABILITY,!EIA_SEEN"},
+
+			"FTR_WRONG":{"cmd":"test", "code":"FTR_WRONG"},
+			"FTR_RIGHT":{"cmd":"test", "code":"FTR_RIGHT"},
+			
+			"FTR_INCOMPLETE":{"cmd":"test", "code":"FTR_INCOMPLETE"},
+			
+			"FTR_SBYS2":{"cmd":"test", "code":"FTR_SBYS2"},
+			
+			"SKILL_R01_FAIL":{"cmd":"exec","code":"{return ((gTutor.ktSkills['rule0'].queryBelief() <  0.93) || (gTutor.ktSkills['rule1'].queryBelief() <  0.96));}"},
+			"SKILL_R01_PASS":{"cmd":"exec","code":"{return ((gTutor.ktSkills['rule0'].queryBelief() >= 0.93) && (gTutor.ktSkills['rule1'].queryBelief() >= 0.96));}"},
+				
+			"FTR_PRETEST":{"cmd":"test", "code":"FTR_PRETEST"},
+			"FTR_POSTTEST":{"cmd":"test","code":"FTR_POSTTEST"},
+			"FTR_TYPEA":{"cmd":"test",   "code":"FTR_TYPEA"},
+			"FTR_TYPEB":{"cmd":"test",   "code":"FTR_TYPEB"},
+	
+			"RMPPRE_B_F":{"cmd":"exec","code":"return ((SD1input1 != null) && (SD1input1.selPhraseID == 'NONE'));"},
+	
+			"RMPPRE_C_DA":{"cmd":"exec","code":"return ((SD1input1.selPhraseID == 'PHRASE3') || (SD1input1.selPhraseID == 'PHRASE4') || (SD1input1.selPhraseID == 'PHRASE6'));"},
+			"RMPPRE_C_DB":{"cmd":"exec","code":"return ((SD1input1.selPhraseID == 'PHRASE5') || (SD1input1.selPhraseID == 'PHRASE7') || (SD1input1.selPhraseID == 'PHRASE9') || (SD1input1.selPhraseID == 'PHRASE10'));"},
+			"RMPPRE_C_DC":{"cmd":"exec","code":"return ((SD1input1.selPhraseID == 'PHRASE1'));"},
+			"RMPPRE_C_F" :{"cmd":"exec","code":"return ((SD1input1.selPhraseID == 'PHRASE11'));"}
+		}		
+	},
+
+
+
+
+	
+	"SSbSRule2_1.0A":
+	{	
+		"COMMENT":"You have now setup a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"COMMENT":"@@ MODIFIED root CONSTRAINTS Spring 2014  {'constraint':'SKILL_R2_PASS','edge':'NEXTSCENE' }, {'constraint':'','edge':'Q2_BREAK' }",
+						
+			"root":{"COMMENT":"You have now setup a good experiment...",
+					"COMMENT":"It's a good experiment becuase we are using...",
+					"COMMENT":"You chose to use the same ...  ... ... means that only the ...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"Q2A",
+					 "preenter":"",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE" }							
+							]
+					},
+										
+			"Q2_BREAK":{"COMMENT":"Now that you have made these good choices, let's think...",
+						"COMMENT":"Let's imagine that in this experiment the ball rolled farther...",
+						"type":"node",
+						"subtype":"module", 
+						"name":"Q2_BREAK",
+						"edges":
+								[
+									{"constraint":"","edge":"NEXTSCENE"}
+								]
+					},
+					
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"",					 
+					 "edges":
+							[
+							]
+					}					
+					
+					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"Q2A":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2b.0_I1A", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2b.1_I1A", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2b.2_I1A", "features":"FTR_SBS_Q1"},
+					
+					{"classname":"CSSbSRule2b.0_I2A", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2b.1_I2A", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2b.2_I2A", "features":"FTR_SBS_Q2"},
+
+					{"classname":"CSSbSRule2b.0_I3A", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2b.1_I3A", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2b.2_I3A", "features":"FTR_SBS_Q3"},
+
+					{"classname":"CSSbSRule2b.0_I4A", "features":"FTR_SBS_Q4"},
+					{"classname":"CSSbSRule2b.1_I4A", "features":"FTR_SBS_Q4"},
+					{"classname":"CSSbSRule2b.2_I4A", "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"Q2_BREAK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2b.3_I1A", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2b.4_I1A", "features":"FTR_SBS_Q1"},
+					
+					{"classname":"CSSbSRule2b.3_I2A", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2b.4_I2A", "features":"FTR_SBS_Q2"},
+
+					{"classname":"CSSbSRule2b.3_I3A", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2b.4_I3A", "features":"FTR_SBS_Q3"},
+
+					{"classname":"CSSbSRule2b.3_I4A", "features":"FTR_SBS_Q4"},
+					{"classname":"CSSbSRule2b.4_I4A", "features":"FTR_SBS_Q4"}					
+				]
+			}
+			
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+
+			"SKILL_R2_PASS" :{"cmd":"exec","code":"{return  (gTutor.ktSkills['rule2'].queryBelief() >= 0.95); }"}
+		}
+		
+	},
+
+
+
+
+	
+	"SSbSRule2_1.1A":
+	{	
+		"COMMENT":"Is there anything in this experiment besides the different types of...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Is there anything in this experiment besides the different types of...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"Q2A",
+					"preenter":"{SclickMask1.visible = false; setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"ASSERT_FTRS","edge":"ASSESSMENT"}
+							]
+					},
+					
+			"ASSESSMENT":{"COMMENT":"Assessment of response",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"R2A",					 
+					"preenter":"{SclickMask1.visible = true; fComplete=false; updateNav(); }",
+					"preexit" :"{Sgroup1.retractFeatures(); setButtonBehavior('incrScene');}",
+					 "edges":
+							[
+							]
+					}										
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"Q2A":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.1", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.1", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.1", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.1", "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"R2A":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.1Right", "features":"FTR_SBS_Q1,FTR_RIGHT"},
+					{"classname":"CSSbSRule2.1.1Wrong", "features":"FTR_SBS_Q1,FTR_WRONG"},
+							
+					{"classname":"CSSbSRule2.2.1Right", "features":"FTR_SBS_Q2,FTR_RIGHT"},
+					{"classname":"CSSbSRule2.2.1Wrong", "features":"FTR_SBS_Q2,FTR_WRONG"},		
+
+					{"classname":"CSSbSRule2.3.1Right", "features":"FTR_SBS_Q3,FTR_RIGHT"},
+					{"classname":"CSSbSRule2.3.1Wrong", "features":"FTR_SBS_Q3,FTR_WRONG"},		
+
+					{"classname":"CSSbSRule2.4.1Right", "features":"FTR_SBS_Q4,FTR_RIGHT"},
+					{"classname":"CSSbSRule2.4.1Wrong", "features":"FTR_SBS_Q4,FTR_WRONG"}		
+				]
+			}			
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"RETRACT_FTRS":{"type":"action", "cmd":"exec","code":"Sgroup1.retractFeatures(); return true;"}		
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+
+			"ASSERT_FTRS":{"cmd":"exec","code":"Sgroup1.assertFeatures(); return true;"}
+		}
+		
+	},
+
+
+
+
+
+	
+	"SSbSRule2_1.2A":
+	{	
+		"COMMENT":"So, if we did the experiment above, could...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"So, if we did the experiment above, could...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"Q2A",
+					"preenter":"{SclickMask1.visible = false; setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[							
+								{"constraint":"QUESTIONFINISHED","edge":"CHECKRESP"},
+								{"constraint":"R1_STEEP","edge":"sayVAR1.0"},
+								{"constraint":""        ,"edge":"sayNOTVAR1.0"}
+							]
+					},
+					
+			"sayVAR1.0":{"COMMENT":"Slope-type Ball-Type Start Surface",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"STEEP_A",
+					 "edges":
+							[
+								{"constraint":"QUESTIONFINISHED","edge":"CHECKRESP"},
+								{"constraint":"","edge":"CAUSED"}
+							]
+					},
+					
+			"sayNOTVAR1.0":{"COMMENT":"Not - Steep Ball-Type Start Surface",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"NOTSTEEP_A",
+					 "edges":
+							[
+								{"constraint":"QUESTIONFINISHED","edge":"CHECKRESP"},
+								{"constraint":"","edge":"CAUSED"}
+							]
+					},
+					
+			"CAUSED":{"COMMENT":"caused the ball to roll farther...",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"CAUSED",
+					 "edges":
+							[
+								{"constraint":"QUESTIONFINISHED","edge":"CHECKRESP"},
+								{"constraint":"R2_STEEP","edge":"sayVAR1.1"},
+								{"constraint":""        ,"edge":"sayNOTVAR1.1"}
+							]
+					},
+					
+			"sayVAR1.1":{"COMMENT":"Slope-type Ball-Type Start Surface",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"STEEP_A_STOP",
+					 "edges":
+							[
+								{"constraint":"QUESTIONFINISHED","edge":"CHECKRESP"}
+							]
+					},
+					
+			"sayNOTVAR1.1":{"COMMENT":"Not - Steep Ball-Type Start Surface",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"NOTSTEEP_A_STOP",
+					 "edges":
+							[
+								{"constraint":"QUESTIONFINISHED","edge":"CHECKRESP"}
+							]
+					},
+					
+			"CHECKRESP":{"COMMENT":"Assert features on answer",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"ASSERT_FTRS",
+					 "preenter":"{SclickMask1.visible = true; fComplete=false; updateNav(); }",
+					 "preexit" :"",
+					 "edges":
+							[
+								{"constraint":"FTR_RIGHT","edge":"RIGHT"},
+								{"constraint":"FTR_WRONG","edge":"WRONG"}
+							]
+					},					
+										
+			"RIGHT":{"COMMENT":"That's right you couldn't know...",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"RIGHT",
+					 "edges":
+							[
+								{"constraint":"R1_STEEP","edge":"sayVAR1.0B"},
+								{"constraint":""        ,"edge":"sayNOTVAR2.0B"}							
+							]
+					},
+					
+			"WRONG":{"COMMENT":"Actually you couldn't know...",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"WRONG",
+					 "edges":
+							[
+								{"constraint":"R1_STEEP","edge":"sayVAR1.0B"},
+								{"constraint":""        ,"edge":"sayNOTVAR2.0B"}							
+							]
+					},
+
+
+			"sayVAR1.0B":{"COMMENT":"Slope-type Ball-Type Start Surface",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"STEEP_B",
+					 "edges":
+							[
+								{"constraint":"","edge":"THETOP"}
+							]
+					},
+					
+			"sayNOTVAR2.0B":{"COMMENT":"Not - Steep Ball-Type Start Surface",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"NOTSTEEP_B",
+					 "edges":
+							[
+								{"constraint":"","edge":"THETOP"}
+							]
+					},
+					
+			"THETOP":{"COMMENT":"The VALUE_X may have been what caused the ball to roll farther... not the...",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"THETOP",
+					 "edges":
+							[
+								{"constraint":"R1_STEEP","edge":"sayVAR1.1B"},
+								{"constraint":""        ,"edge":"sayNOTVAR2.1B"}
+							]
+					},
+					
+			"sayVAR1.1B":{"COMMENT":"Slope-type Ball-Type Start Surface",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"STEEP_B",
+					 "edges":
+							[
+								{"constraint":"","edge":"RETRACT_FTRS"}
+							]
+					},
+					
+			"sayNOTVAR2.1B":{"COMMENT":"Not - Steep Ball-Type Start Surface",
+					 "type":"node",
+					"subtype":"module", 
+					 "name":"NOTSTEEP_B",
+					 "edges":
+							[
+								{"constraint":"","edge":"RETRACT_FTRS"}
+							]
+					},
+					
+			"RETRACT_FTRS":{"COMMENT":"Action to retract the group features before leaving",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"RETRACT_FTRS",
+ 					 "preenter":"",
+					 "preexit" :"{ setButtonBehavior('incrScene'); }",
+					 "edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"Q2A":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2"  , "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.2"  , "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.2"  , "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.2"  , "features":"FTR_SBS_Q4"}
+				]
+			},
+
+			"STEEP_A":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.0", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.2.0", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.2.0", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.2.0", "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"NOTSTEEP_A":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.1", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.2.1", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.2.1", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.2.1", "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"CAUSED":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.2", "features":""}
+				]
+			},
+			
+			"STEEP_A_STOP":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.0S", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.2.0S", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.2.0S", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.2.0S", "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"NOTSTEEP_A_STOP":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.1S", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.2.1S", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.2.1S", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.2.1S", "features":"FTR_SBS_Q4"}
+				]
+			},
+			
+			"COMMENT":"@@@@ Assessment @@@@@",
+			
+			"RIGHT":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.Right" , "features":""}
+				]
+			},		
+				
+			"WRONG":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.Wrong" , "features":""}
+				]
+			},
+			
+			"STEEP_B":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.0.R"	, "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.2.0.R"	, "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.2.0.R"	, "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.2.0.R"	, "features":"FTR_SBS_Q4"}
+				]
+			},		
+				
+			"NOTSTEEP_B":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.1.R"	, "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.2.1.R"	, "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.2.1.R"	, "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.2.1.R"	, "features":"FTR_SBS_Q4"}
+				]
+			},		
+				
+			"THETOP":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.2.R"	, "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.2.2.R"	, "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.2.2.R"	, "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.2.2.R"	, "features":"FTR_SBS_Q4"}
+				]
+			},		
+				
+			"STEEP_B_STOP":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.0.RS"	, "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.2.0.RS"	, "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.2.0.RS"	, "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.2.0.RS"	, "features":"FTR_SBS_Q4"}
+				]
+			},		
+				
+			"NOTSTEEP_B_STOP":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.2.1.RS"	, "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.2.2.1.RS"	, "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.2.1.RS"	, "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.2.1.RS"	, "features":"FTR_SBS_Q4"}
+				]
+			}		
+				
+						
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"ASSERT_FTRS": {"type":"action", "cmd":"exec","code":"Sgroup1.assertFeatures(); return true;"},
+			"RETRACT_FTRS":{"type":"action", "cmd":"exec","code":"Sgroup1.retractFeatures(); return true;"}		
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+
+			"QUESTIONFINISHED":   {"cmd":"exec","code":"return fNextClicked;"},
+
+			"FTR_WRONG":{"cmd":"test", "code":"FTR_WRONG"},
+			"FTR_RIGHT":{"cmd":"test", "code":"FTR_RIGHT"},
+
+			"R1_STEEP":{"cmd":"exec","code":"return (SD1tableA.getLabel(curVarRow, 1) == SD1tableA.getChoices(curVarRow, 1, 0));"},
+			"R2_STEEP":{"cmd":"exec","code":"return (SD1tableA.getLabel(curVarRow, 2) == SD1tableA.getChoices(curVarRow, 2, 0));"}
+		}		
+	},
+
+
+
+
+
+	
+	
+	"SSbSRule2_1.3A":
+	{	
+		"COMMENT":"Since we ONLY want to find out whether or not the different slopes affect how far the balls roll...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Since we ONLY want to find out whether or not the different slopes affect how far the balls roll...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"Q2A",
+					"preenter":"{fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"Q2A":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.3.0", "features":"FTR_SBS_Q1"},
+					{"classname":"CSSbSRule2.1.3.1", "features":"FTR_SBS_Q1"},
+
+					{"classname":"CSSbSRule2.2.3.0", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.2.3.1", "features":"FTR_SBS_Q2"},
+
+					{"classname":"CSSbSRule2.3.3.0", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.3.3.1", "features":"FTR_SBS_Q3"},
+
+					{"classname":"CSSbSRule2.4.3.0", "features":"FTR_SBS_Q4"},
+					{"classname":"CSSbSRule2.4.3.1", "features":"FTR_SBS_Q4"}
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}
+		
+	},
+
+	
+	
+	"SSbSRule2_1.4A":
+	{	
+		"COMMENT":"CWOZSbSScene5 - Please correct this experiment now...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Please correct this experiment now...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"Q2A",
+					"preenter":"{completeTable(); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"Q2A":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CSSbSRule2.1.4.0", "features":""},
+					{"classname":"CSSbSRule2.1.4.1", "features":"FTR_SBS_Q1"},					
+					{"classname":"CSSbSRule2.2.4.1", "features":"FTR_SBS_Q2"},
+					{"classname":"CSSbSRule2.3.4.1", "features":"FTR_SBS_Q3"},
+					{"classname":"CSSbSRule2.4.4.1", "features":"FTR_SBS_Q4"}
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"		
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+
+
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EI EVALUATE QUEST ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EI EVALUATE QUEST ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EI EVALUATE QUEST ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_EVAL_QUEST":
+	{	
+		"COMMENT":"Is this a good way to design the experiment...",
+		"COMMENT":"CWOZEvaluateE",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Is this a good way to design the experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_QUEST",
+					"preenter":"{ setButtonBehavior('incrAnimation');  fComplete=false; updateNav(); }",
+					"preexit" :"{ if(SE1button1.getChecked()) assertFeature('FTR_RIGHT'); }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},					
+					
+			"NEXTSCENE":{"COMMENT":"We use the next button to fire the preexit behavior - because the parent scene description is within a scenemodule not a scenenode",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{ setButtonBehavior('incrScene'); }",					 
+					 "edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_QUEST":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZEvalAudioE1A", "features":""}					
+				]
+			}			
+		},
+		
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+			
+	},
+
+
+	"EIB_EVAL_QUEST":
+	{	
+		"COMMENT":"Is this a good way to design the experiment...",
+		"COMMENT":"CWOZEvaluateE",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Is this a good way to design the experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_QUEST",
+					"preenter":"{ setButtonBehavior('incrAnimation');  fComplete=false; updateNav(); }",
+					"preexit" :"{ if(SE1button2.getChecked()) assertFeature('FTR_RIGHT'); }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},					
+					
+			"NEXTSCENE":{"COMMENT":"We use the next button to fire the preexit behavior - because the parent scene description is within a scenemodule not a scenenode",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{ setButtonBehavior('incrScene'); }",					 
+					 "edges":
+							[
+							]
+					}										
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_QUEST":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZEvalAudioE2", "features":""}					
+				]
+			}			
+		},
+		
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+			
+	},
+
+
+	"EIC_EVAL_QUEST":
+	{	
+		"COMMENT":"Is this a good way to design the experiment...",
+		"COMMENT":"CWOZEvaluateE",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Is this a good way to design the experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_QUEST",
+					"preenter":"{ setButtonBehavior('incrAnimation');  fComplete=false; updateNav(); }",
+					"preexit" :"{ if(SE1button2.getChecked()) assertFeature('FTR_RIGHT'); }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},					
+					
+			"NEXTSCENE":{"COMMENT":"We use the next button to fire the preexit behavior - because the parent scene description is within a scenemodule not a scenenode",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{ setButtonBehavior('incrScene'); }",					 
+					 "edges":
+							[
+							]
+					}										
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_QUEST":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZEvalAudioE3", "features":""}					
+				]
+			}			
+		},
+		
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+			
+	},
+
+
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_EVAL_FEEDBACK":
+	{	
+		"COMMENT":"Right, it is a good... / Actually...",
+		"COMMENT":"CWOZEvaluateG",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"You're Right / Actually...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEBACK",
+					"preenter":"{ fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+							]
+					}
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_FEEBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZRightGoodA",    "features":"FTR_RIGHT"},					
+					{"classname":"CWOZActuallyGoodA", "features":"!FTR_RIGHT"}					
+				]
+			}			
+		}
+	},
+
+
+	"EIB_EVAL_FEEDBACK":
+	{	
+		"COMMENT":"You're Right / Actually...",
+		"COMMENT":"CWOZEvaluateG",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"You're Right / Actually...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEBACK",
+					"preenter":"{ fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+							]
+					}
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_FEEBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZRightBad",    "features":"FTR_RIGHT"},					
+					{"classname":"CWOZActuallyBad", "features":"!FTR_RIGHT"}					
+				]
+			}			
+		}
+	},
+
+
+	"EIC_EVAL_FEEDBACK":
+	{	
+		"COMMENT":"You're Right / Actually...",
+		"COMMENT":"CWOZEvaluateG",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"You're Right / Actually...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEBACK",
+					"preenter":"{ fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+							]
+					}
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_FEEBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZRightBad",    "features":"FTR_RIGHT"},					
+					{"classname":"CWOZActuallyBad", "features":"!FTR_RIGHT"}					
+				]
+			}			
+		}
+	},
+
+
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE DD SELFEX with FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE DD SELFEX with FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE DD SELFEX with FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_EVAL_FB_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"PARSE_RESULT"}
+							]
+					},
+
+			"PARSE_RESULT":{"COMMENT":"Set appropriate Feature based on user selection.",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"PARSE_RESULT",
+					 "preenter":"",
+					 "preexit" :"",					 
+					 "edges":
+							[
+								{"constraint":"","edge":"EXP_FEEDBACK"}
+							]
+					},															
+					
+			"EXP_FEEDBACK":{"COMMENT":"Response specific feedback...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEDBACK",
+					"preenter":"",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  retractFeature(queryGlobal('CEIA_EVAL_FB')); setButtonBehavior('incrScene'); }",
+					"edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIA_EVAL_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIA_EVAL_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			},
+			
+			"EXP_FEEDBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIA_EVAL_SLFEX_FB_CVSP", "features":"EIA_EVAL_SLFEX_FB_CVSP"},					
+					{"classname":"CEIA_EVAL_SLFEX_FB_ER2" , "features":"EIA_EVAL_SLFEX_FB_ER2" },					
+					{"classname":"CEIA_EVAL_SLFEX_FB_CVSC", "features":"EIA_EVAL_SLFEX_FB_CVSC"},					
+					{"classname":"CEIA_EVAL_SLFEX_FB_VE"  , "features":"EIA_EVAL_SLFEX_FB_VE"  },					
+					{"classname":"CEIA_EVAL_SLFEX_FB_ENGR", "features":"EIA_EVAL_SLFEX_FB_ENGR"},					
+					{"classname":"CEIA_EVAL_SLFEX_FB_IDK" , "features":"EIA_EVAL_SLFEX_FB_IDK" }
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"PARSE_RESULT":{"type":"action", "cmd":"exec", "code":"assertFeature(Scombo1.selPhraseID); assertGlobal('CEIA_EVAL_FB',Scombo1.selPhraseID);"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+	"EIB_EVAL_FB_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"PARSE_RESULT"}
+							]
+					},
+
+			"PARSE_RESULT":{"COMMENT":"Set appropriate Feature based on user selection.",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"PARSE_RESULT",
+					 "preenter":"",
+					 "preexit" :"",					 
+					 "edges":
+							[
+								{"constraint":"","edge":"EXP_FEEDBACK"}
+							]
+					},															
+					
+			"EXP_FEEDBACK":{"COMMENT":"Response specific feedback...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEDBACK",
+					"preenter":"",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  retractFeature(queryGlobal('CEIB_EVAL_FB')); setButtonBehavior('incrScene'); }",
+					"edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_EVAL_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIBC_EVAL_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			},
+			
+			"EXP_FEEDBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIB_EVAL_SLFEX_FB_CVSP", "features":"EIB_EVAL_SLFEX_FB_CVSP"},					
+					{"classname":"CEIB_EVAL_SLFEX_FB_OF"  , "features":"EIB_EVAL_SLFEX_FB_OF"  },					
+					{"classname":"CEIB_EVAL_SLFEX_FB_CVSC", "features":"EIB_EVAL_SLFEX_FB_CVSC"},					
+					{"classname":"CEIB_EVAL_SLFEX_FB_VE"  , "features":"EIB_EVAL_SLFEX_FB_VE"  },					
+					{"classname":"CEIB_EVAL_SLFEX_FB_ENGR", "features":"EIB_EVAL_SLFEX_FB_ENGR"},					
+					{"classname":"CEIB_EVAL_SLFEX_FB_IDK" , "features":"EIB_EVAL_SLFEX_FB_IDK" }
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"PARSE_RESULT":{"type":"action", "cmd":"exec", "code":"assertFeature(Scombo1.selPhraseID); assertGlobal('CEIB_EVAL_FB',Scombo1.selPhraseID);"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+
+	"EIC_EVAL_FB_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"PARSE_RESULT"}
+							]
+					},
+
+			"PARSE_RESULT":{"COMMENT":"Set appropriate Feature based on user selection.",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"PARSE_RESULT",
+					 "preenter":"",
+					 "preexit" :"",					 
+					 "edges":
+							[
+								{"constraint":"","edge":"EXP_FEEDBACK"}
+							]
+					},															
+					
+			"EXP_FEEDBACK":{"COMMENT":"Response specific feedback...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEDBACK",
+					"preenter":"",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  retractFeature(queryGlobal('CEIC_EVAL_FB')); setButtonBehavior('incrScene'); }",
+					"edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_EVAL_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIBC_EVAL_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			},
+			
+			"EXP_FEEDBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIC_EVAL_SLFEX_FB_CVSP", "features":"EIC_EVAL_SLFEX_FB_CVSP"},					
+					{"classname":"CEIC_EVAL_SLFEX_FB_OF"  , "features":"EIC_EVAL_SLFEX_FB_OF"  },					
+					{"classname":"CEIC_EVAL_SLFEX_FB_CVSC", "features":"EIC_EVAL_SLFEX_FB_CVSC"},					
+					{"classname":"CEIC_EVAL_SLFEX_FB_VE"  , "features":"EIC_EVAL_SLFEX_FB_VE"  },					
+					{"classname":"CEIC_EVAL_SLFEX_FB_ENGR", "features":"EIC_EVAL_SLFEX_FB_ENGR"},					
+					{"classname":"CEIC_EVAL_SLFEX_FB_IDK" , "features":"EIC_EVAL_SLFEX_FB_IDK" }					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"PARSE_RESULT":{"type":"action", "cmd":"exec", "code":"assertFeature(Scombo1.selPhraseID); assertGlobal('CEIC_EVAL_FB',Scombo1.selPhraseID);"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE DD SELFEX w/o FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE DD SELFEX w/o FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE DD SELFEX w/o FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_EVAL_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIA_EVAL_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIA_EVAL_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+	"EIB_EVAL_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_EVAL_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIBC_EVAL_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+
+	"EIC_EVAL_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_EVAL_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIBC_EVAL_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE OE SELFEX  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE OE SELFEX  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI EVALUATE OE SELFEX  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_EVAL_OESELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIA_EVAL_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIA_EVAL_OE_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+	},
+
+	"EIB_EVAL_OESELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_EVAL_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIBC_EVAL_OE_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+	},
+
+
+	"EIC_EVAL_OESELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_EVAL_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIBC_EVAL_OE_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+	},
+
+
+
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EI IMAGINE QUEST ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EI IMAGINE QUEST ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EI IMAGINE QUEST ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_IMAG_QUEST":
+	{	
+		"COMMENT":"The balls may roll the same or different distances. Imagine...",
+		"COMMENT":"CWOZEvaluateE",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"The balls may roll the same or different distances. Imagine...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_QUEST",
+					"preenter":"{ setButtonBehavior('incrAnimation');  fComplete=false; updateNav(); }",
+					"preexit" :"{ if(SE1button1.getChecked()) assertFeature('FTR_RIGHT'); }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},					
+					
+			"NEXTSCENE":{"COMMENT":"We use the next button to fire the preexit behavior - because the parent scene description is within a scenemodule not a scenenode",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{ setButtonBehavior('incrScene'); }",					 
+					 "edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_QUEST":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZEvalAudioEIm1", "features":""}					
+				]
+			}			
+		},
+		
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+			
+	},
+
+
+	"EIB_IMAG_QUEST":
+	{	
+		"COMMENT":"The balls may roll the same or different distances. Imagine...",
+		"COMMENT":"CWOZEvaluateE",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"The balls may roll the same or different distances. Imagine...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_QUEST",
+					"preenter":"{ setButtonBehavior('incrAnimation');  fComplete=false; updateNav(); }",
+					"preexit" :"{ if(SE1button2.getChecked()) assertFeature('FTR_RIGHT'); }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},					
+					
+			"NEXTSCENE":{"COMMENT":"We use the next button to fire the preexit behavior - because the parent scene description is within a scenemodule not a scenenode",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{ setButtonBehavior('incrScene'); }",					 
+					 "edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_QUEST":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZEvalAudioEIm2", "features":""}					
+				]
+			}			
+		},
+		
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+			
+	},
+
+
+	"EIC_IMAG_QUEST":
+	{	
+		"COMMENT":"The balls may roll the same or different distances. Imagine...",
+		"COMMENT":"CWOZEvaluateE",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"The balls may roll the same or different distances. Imagine...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_QUEST",
+					"preenter":"{ setButtonBehavior('incrAnimation');  fComplete=false; updateNav(); }",
+					"preexit" :"{ if(SE1button2.getChecked()) assertFeature('FTR_RIGHT'); }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},					
+					
+			"NEXTSCENE":{"COMMENT":"We use the next button to fire the preexit behavior - because the parent scene description is within a scenemodule not a scenenode",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{ setButtonBehavior('incrScene'); }",					 
+					 "edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_QUEST":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZEvalAudioEIm3", "features":""}					
+				]
+			}			
+		},
+		
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+			
+	},
+
+
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_IMAG_FEEDBACK":
+	{	
+		"COMMENT":"You're Right / Actually...",
+		"COMMENT":"CWOZEvaluateG",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"You're Right / Actually...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEBACK",
+					"preenter":"{ fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+							]
+					}
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_FEEBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZRight1",    "features":"FTR_RIGHT"},					
+					{"classname":"CWOZActually1", "features":"!FTR_RIGHT"}					
+				]
+			}			
+		}
+	},
+
+
+	"EIB_IMAG_FEEDBACK":
+	{	
+		"COMMENT":"You're Right / Actually...",
+		"COMMENT":"CWOZEvaluateG",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"You're Right / Actually...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEBACK",
+					"preenter":"{ fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+							]
+					}
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_FEEBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZRight2",    "features":"FTR_RIGHT"},					
+					{"classname":"CWOZActually2", "features":"!FTR_RIGHT"}					
+				]
+			}			
+		}
+	},
+
+
+	"EIC_IMAG_FEEDBACK":
+	{	
+		"COMMENT":"You're Right / Actually...",
+		"COMMENT":"CWOZEvaluateG",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"You're Right / Actually...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEBACK",
+					"preenter":"{ fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+							]
+					}
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_FEEBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CWOZRight3",    "features":"FTR_RIGHT"},					
+					{"classname":"CWOZActually3", "features":"!FTR_RIGHT"}					
+				]
+			}			
+		}
+	},
+
+
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE DD SELFEX with FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE DD SELFEX with FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE DD SELFEX with FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_IMAG_FB_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"PARSE_RESULT"}
+							]
+					},
+
+			"PARSE_RESULT":{"COMMENT":"Set appropriate Feature based on user selection.",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"PARSE_RESULT",
+					 "preenter":"",
+					 "preexit" :"",					 
+					 "edges":
+							[
+								{"constraint":"","edge":"EXP_FEEDBACK"}
+							]
+					},															
+					
+			"EXP_FEEDBACK":{"COMMENT":"Response specific feedback...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEDBACK",
+					"preenter":"",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  retractFeature(queryGlobal('CEIA_IMAG_FB')); setButtonBehavior('incrScene'); }",
+					"edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIA_IMAG_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIA_IMAG_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			},
+			
+			"EXP_FEEDBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIA_IMAG_SLFEX_FB_CVSP", "features":"EIA_IMAG_SLFEX_FB_CVSP"},					
+					{"classname":"CEIA_IMAG_SLFEX_FB_ER2" , "features":"EIA_IMAG_SLFEX_FB_ER2" },					
+					{"classname":"CEIA_IMAG_SLFEX_FB_CVSC", "features":"EIA_IMAG_SLFEX_FB_CVSC"},					
+					{"classname":"CEIA_IMAG_SLFEX_FB_VE"  , "features":"EIA_IMAG_SLFEX_FB_VE"  },					
+					{"classname":"CEIA_IMAG_SLFEX_FB_ENGR", "features":"EIA_IMAG_SLFEX_FB_ENGR"},					
+					{"classname":"CEIA_IMAG_SLFEX_FB_IDK" , "features":"EIA_IMAG_SLFEX_FB_IDK" }
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"PARSE_RESULT":{"type":"action", "cmd":"exec", "code":"assertFeature(Scombo1.selPhraseID); assertGlobal('CEIA_IMAG_FB',Scombo1.selPhraseID);"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+	
+	
+	"EIB_IMAG_FB_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"PARSE_RESULT"}
+							]
+					},
+
+			"PARSE_RESULT":{"COMMENT":"Set appropriate Feature based on user selection.",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"PARSE_RESULT",
+					 "preenter":"",
+					 "preexit" :"",					 
+					 "edges":
+							[
+								{"constraint":"","edge":"EXP_FEEDBACK"}
+							]
+					},															
+					
+			"EXP_FEEDBACK":{"COMMENT":"Response specific feedback...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEDBACK",
+					"preenter":"",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  retractFeature(queryGlobal('CEIA_IMAG_FB')); setButtonBehavior('incrScene'); }",
+					"edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_IMAG_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIB_IMAG_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			},
+			
+			"EXP_FEEDBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIB_IMAG_SLFEX_FB_CVSP", "features":"EIB_IMAG_SLFEX_FB_CVSP"},					
+					{"classname":"CEIB_IMAG_SLFEX_FB_OF"  , "features":"EIB_IMAG_SLFEX_FB_OF"  },					
+					{"classname":"CEIB_IMAG_SLFEX_FB_CVSC", "features":"EIB_IMAG_SLFEX_FB_CVSC"},					
+					{"classname":"CEIB_IMAG_SLFEX_FB_VE"  , "features":"EIB_IMAG_SLFEX_FB_VE"  },					
+					{"classname":"CEIB_IMAG_SLFEX_FB_ENGR", "features":"EIB_IMAG_SLFEX_FB_ENGR"},					
+					{"classname":"CEIB_IMAG_SLFEX_FB_IDK" , "features":"EIB_IMAG_SLFEX_FB_IDK" }
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"PARSE_RESULT":{"type":"action", "cmd":"exec", "code":"assertFeature(Scombo1.selPhraseID); assertGlobal('CEIA_IMAG_FB',Scombo1.selPhraseID);"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+	
+	"EIC_IMAG_FB_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"PARSE_RESULT"}
+							]
+					},
+
+			"PARSE_RESULT":{"COMMENT":"Set appropriate Feature based on user selection.",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"PARSE_RESULT",
+					 "preenter":"",
+					 "preexit" :"",					 
+					 "edges":
+							[
+								{"constraint":"","edge":"EXP_FEEDBACK"}
+							]
+					},															
+					
+			"EXP_FEEDBACK":{"COMMENT":"Response specific feedback...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEDBACK",
+					"preenter":"",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  retractFeature(queryGlobal('CEIA_IMAG_FB')); setButtonBehavior('incrScene'); }",
+					"edges":
+							[
+							]
+					}					
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_IMAG_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIC_IMAG_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			},
+			
+			"EXP_FEEDBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIC_IMAG_SLFEX_FB_CVSP", "features":"EIC_IMAG_SLFEX_FB_CVSP"},					
+					{"classname":"CEIC_IMAG_SLFEX_FB_ER2" , "features":"EIC_IMAG_SLFEX_FB_ER2" },					
+					{"classname":"CEIC_IMAG_SLFEX_FB_CVSC", "features":"EIC_IMAG_SLFEX_FB_CVSC"},					
+					{"classname":"CEIC_IMAG_SLFEX_FB_OF"  , "features":"EIC_IMAG_SLFEX_FB_OF"  },					
+					{"classname":"CEIC_IMAG_SLFEX_FB_ENGR", "features":"EIC_IMAG_SLFEX_FB_ENGR"},					
+					{"classname":"CEIC_IMAG_SLFEX_FB_IDK" , "features":"EIC_IMAG_SLFEX_FB_IDK" }					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"PARSE_RESULT":{"type":"action", "cmd":"exec", "code":"assertFeature(Scombo1.selPhraseID); assertGlobal('CEIA_IMAG_FB',Scombo1.selPhraseID);"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+	
+	
+	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE DD SELFEX w/o FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE DD SELFEX w/o FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE DD SELFEX w/o FEEDBACK  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_IMAG_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIA_IMAG_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIA_IMAG_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+	
+	
+	"EIB_IMAG_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_IMAG_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIB_IMAG_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+	
+	"EIC_IMAG_SELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_IMAG_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIC_IMAG_DD_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+	
+
+	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE OE SELFEX  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE OE SELFEX  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI IMAGINE OE SELFEX  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_IMAG_OESELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIA_IMAG_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIA_IMAG_OE_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}			
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+	},
+	
+	
+	"EIB_IMAG_OESELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_IMAG_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIB_IMAG_OE_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+	},
+
+	
+	"EIC_IMAG_OESELFEX":
+	{	
+		"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was a good way - Now, try to explain why this was a good experiment...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEIBC_IMAG_ALL_SLFEX_RIGHT", "features":"FTR_RIGHT"},					
+					{"classname":"CEIC_IMAG_OE_SLFEX_WRONG", "features":"!FTR_RIGHT"}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+					
+		}
+	},
+	
+	
+	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI FINAL CORRECTED SELFEX with FEEDBACK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI FINAL CORRECTED SELFEX with FEEDBACK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI FINAL CORRECTED SELFEX with FEEDBACK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_CORR_FB_SELFEX":
+	{	
+		"COMMENT":"Explain to Amal why this is a  good way...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Explain to Amal why this is a  good way...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"PARSE_RESULT"}
+							]
+					},
+
+			"PARSE_RESULT":{"COMMENT":"Set appropriate Feature based on user selection.",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"PARSE_RESULT",
+					 "preenter":"",
+					 "preexit" :"",					 
+					 "edges":
+							[
+								{"constraint":"","edge":"EXP_FEEDBACK"}
+							]
+					},															
+					
+			"EXP_FEEDBACK":{"COMMENT":"Response specific feedback...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEDBACK",
+					"preenter":"",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  retractFeature(queryGlobal('CEIA_CORR_FB')); }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE" }
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}																									
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CCAcorrectionSelfExAudio1A", "features":""}					
+				]
+			},
+			
+			"EXP_FEEDBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEI_GENERIC_RIGHT", "features":"EIA_CORR_SLFEX_FB_CVSP"},					
+					{"classname":"CEI_GENERIC_WRONG", "features":"EIA_CORR_SLFEX_FB_ER2" },					
+					{"classname":"CEI_GENERIC_RIGHT", "features":"EIA_CORR_SLFEX_FB_CVSC"},					
+					{"classname":"CEI_GENERIC_WRONG", "features":"EIA_CORR_SLFEX_FB_VE"  },					
+					{"classname":"CEI_GENERIC_WRONG", "features":"EIA_CORR_SLFEX_FB_ENGR"},					
+					{"classname":"CEI_GENERIC_UNDEF", "features":"EIA_CORR_SLFEX_FB_IDK" }
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"},
+			"PARSE_RESULT":{"type":"action", "cmd":"exec", "code":"assertFeature(Scombo1.selPhraseID); assertGlobal('CEIA_CORR_FB',Scombo1.selPhraseID);"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+	
+	
+	"EIB_CORR_FB_SELFEX":
+	{	
+		"COMMENT":"Explain to Amal why this is a  good way...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Explain to Amal why this is a  good way...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"PARSE_RESULT"}
+							]
+					},
+
+			"PARSE_RESULT":{"COMMENT":"Set appropriate Feature based on user selection.",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"PARSE_RESULT",
+					 "preenter":"",
+					 "preexit" :"",					 
+					 "edges":
+							[
+								{"constraint":"","edge":"EXP_FEEDBACK"}
+							]
+					},															
+					
+			"EXP_FEEDBACK":{"COMMENT":"Response specific feedback...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEDBACK",
+					"preenter":"",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  retractFeature(queryGlobal('CEIB_CORR_FB')); }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE" }
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}																									
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CCAcorrectionSelfExAudio2A", "features":""}					
+				]
+			},
+			
+			"EXP_FEEDBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEI_GENERIC_RIGHT", "features":"EIB_CORR_SLFEX_FB_CVSP"},					
+					{"classname":"CEI_GENERIC_WRONG", "features":"EIB_CORR_SLFEX_FB_ER2"  },					
+					{"classname":"CEI_GENERIC_RIGHT", "features":"EIB_CORR_SLFEX_FB_CVSC"},					
+					{"classname":"CEI_GENERIC_WRONG", "features":"EIB_CORR_SLFEX_FB_VE"  },					
+					{"classname":"CEI_GENERIC_WRONG", "features":"EIB_CORR_SLFEX_FB_ENGR"},					
+					{"classname":"CEI_GENERIC_UNDEF", "features":"EIB_CORR_SLFEX_FB_IDK" }
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"},
+			"PARSE_RESULT":{"type":"action", "cmd":"exec", "code":"assertFeature(Scombo1.selPhraseID); assertGlobal('CEIB_CORR_FB',Scombo1.selPhraseID);"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+	
+	"EIC_CORR_FB_SELFEX":
+	{	
+		"COMMENT":"Explain to Amal why this is a  good way...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Explain to Amal why this is a  good way...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"",
+					"edges":
+							[
+								{"constraint":"","edge":"PARSE_RESULT"}
+							]
+					},
+
+			"PARSE_RESULT":{"COMMENT":"Set appropriate Feature based on user selection.",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"PARSE_RESULT",
+					 "preenter":"",
+					 "preexit" :"",					 
+					 "edges":
+							[
+								{"constraint":"","edge":"EXP_FEEDBACK"}
+							]
+					},															
+					
+			"EXP_FEEDBACK":{"COMMENT":"Response specific feedback...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_FEEDBACK",
+					"preenter":"",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  retractFeature(queryGlobal('CEIC_CORR_FB')); }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE" }
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}																									
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CCAcorrectionSelfExAudio3A", "features":""}					
+				]
+			},
+			
+			"EXP_FEEDBACK":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CEI_GENERIC_RIGHT", "features":"EIC_CORR_SLFEX_FB_CVSP"},					
+					{"classname":"CEI_GENERIC_WRONG", "features":"EIC_CORR_SLFEX_FB_ER2" },					
+					{"classname":"CEI_GENERIC_RIGHT", "features":"EIC_CORR_SLFEX_FB_CVSC"},					
+					{"classname":"CEI_GENERIC_WRONG", "features":"EIC_CORR_SLFEX_FB_VE"  },					
+					{"classname":"CEI_GENERIC_WRONG", "features":"EIC_CORR_SLFEX_FB_ENGR"},					
+					{"classname":"CEI_GENERIC_UNDEF", "features":"EIC_CORR_SLFEX_FB_IDK" }					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"},
+			"PARSE_RESULT":{"type":"action", "cmd":"exec", "code":"assertFeature(Scombo1.selPhraseID); assertGlobal('CEIC_CORR_FB',Scombo1.selPhraseID);"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI FINAL CORRECTED SELFEX w/o FEEDBACK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI FINAL CORRECTED SELFEX w/o FEEDBACK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+	"COMMENT":"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  EI FINAL CORRECTED SELFEX w/o FEEDBACK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",	
+
+	"EIA_CORR_SELFEX":
+	{	
+		"COMMENT":"Explain to Amal why this is a  good way...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Explain to Amal why this is a  good way...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CCAcorrectionSelfExAudio1A", "features":""}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+	
+	
+	"EIB_CORR_SELFEX":
+	{	
+		"COMMENT":"Explain to Amal why this is a  good way...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Explain to Amal why this is a  good way...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CCAcorrectionSelfExAudio2A", "features":""}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	},
+
+	
+	"EIC_CORR_SELFEX":
+	{	
+		"COMMENT":"Explain to Amal why this is a  good way...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Explain to Amal why this is a  good way...",
+					"type":"node",
+					"subtype":"module", 
+					"name":"EXP_SELFEX",
+					"preenter":"{ setButtonBehavior('incrAnimation'); fComplete=false; updateNav(); }",
+					"preexit" :"{ retractFeature('FTR_RIGHT');  }",
+					"edges":
+							[
+								{"constraint":"","edge":"NEXTSCENE"}
+							]
+					},
+					
+			"NEXTSCENE":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"node",
+					"subtype":"action", 
+					 "name":"NEXTSCENE",
+					 "preenter":"",
+					 "preexit" :"{setButtonBehavior('incrScene');}",					 
+					 "edges":
+							[
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"EXP_SELFEX":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"classname":"CCAcorrectionSelfExAudio3A", "features":""}					
+				]
+			}
+		},
+	
+		"CActions":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CActions  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+					
+			"NEXTSCENE":{"type":"action", "cmd":"exec", "code":"{navigator.gotoNextScene(); return true;}"}
+		},
+	
+		"CConstraints":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CConstraints  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+		}		
+	}
+	
+	
+}
+
+
+
+
+
+

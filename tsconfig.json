@@ -1,0 +1,15 @@
+{
+    "include": [
+        "src/**/*"
+    ],
+    "compilerOptions": {
+		"module": "system",
+		"target": "es6",
+		"sourceMap": true,
+		"declaration": false,
+		"outFile": "../EFTutors/Std_Login/EFTut_Suppl.js",        
+		"lib": [ "es2015", "dom" ],	
+        "noImplicitAny": true,
+        "removeComments":true
+    }
+}
