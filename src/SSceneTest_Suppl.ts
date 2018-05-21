@@ -15,10 +15,10 @@ namespace EFTut_Suppl {
 
         public $preenter() {
             this.connectNavButton(CONST.NEXTSCENE, "SPurpleCircle");
+            this.connectGraph("graphname");
         }
 
         public $preexit() {
-            this.disConnectNavButton(CONST.NEXTSCENE, "SPurpleCircle");
         }
 
         public $demoinit() {
@@ -51,7 +51,6 @@ namespace EFTut_Suppl {
         }
 
         public $preexit() {
-            this.disConnectNavButton(CONST.NEXTSCENE, "SPurpleCircle");
         }
 
         public $demoinit() {
@@ -84,7 +83,10 @@ namespace EFTut_Suppl {
         }
 
         public $preexit() {
-            this.disConnectNavButton(CONST.NEXTSCENE, "SPurpleCircle");
+        }
+
+        public $onexit() {
+            this["SPurpleCircle"].enableButton(false);
         }
 
         public $demoinit() {
@@ -112,12 +114,16 @@ namespace EFTut_Suppl {
             this["SPurpleCircle"].xname = "SPurpleCircle";
         }
 
-        public $preenter() {
-            this.connectNavButton(CONST.NEXTSCENE, "SPurpleCircle");
+        public $onenter() {
+            this["SPurpleCircle"].enableButton(false);
         }
 
+        public $preenter() {
+            this["SPurpleCircle"].enableButton(false);
+        }
+
+        
         public $preexit() {
-            this.disConnectNavButton(CONST.NEXTSCENE, "SPurpleCircle");
         }
 
         public $demoinit() {

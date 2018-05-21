@@ -1,0 +1,49 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["SinkingExpScript_choice0001", "<speak>Within the area of, forces and motion, please select a topic by clicking on a picture below.</speak>"], 
+		["SinkingExpScript_choice0002", "<speak>Below are some variables that might affect the time it takes for objects to sink in water. you can test one of these variables in your experiment</speak>"],
+		["SinkingExpScript_choice0003", "<speak>The density of the water, the shape of the object, the volume of the object, and the density of the object</speak>"],
+		["SinkingExpScript_choice0004", "<speak>Let’s see how this experiment works.</speak>"],
+		["SinkingExpScript_choice0005", "<speak>Here are all of the materials that may be necessary for this experiment, a stopwatch, a lead or glass object, and a graduated cylinder and water.</speak>"],
+		["SinkingExpScript_choice0006", "<speak>We will place an object into a graduated cylinder filled with water.</speak>"],
+		["SinkingExpScript_choice0007", "<speak>It will sink to the bottom.</speak>"],
+		["SinkingExpScript_choice0008", "<speak>We can measure the time it takes for the object to sink in water.</speak>"],
+		["SinkingExpScript_choice0009", "<speak>Push the button in the middle of the screen to see how this experiment works</speak>"],
+		["SinkingExpScript_choice0010", "<speak>In this experiment, there are only four things we can change, any of these might make a difference in time it takes for objects to sink in water, these are the four variables you can test in this experiment, the density of the water, which can be lower</speak>"],
+		["SinkingExpScript_choice0011", "<speak>Or higher might make a difference</speak>"],
+		["SinkingExpScript_choice0012", "<speak>The shape of the object which can be a sphere</speak>"],
+		["SinkingExpScript_choice0013", "<speak>Or tear-shaped might make a difference</speak>"],
+		["SinkingExpScript_choice0014", "<speak>The volume of the object which can be smaller</speak>"],
+		["SinkingExpScript_choice0015", "<speak>Or larger make a difference</speak>"],
+		["SinkingExpScript_choice0016", "<speak>And the density of the object, which can be higher</speak>"],
+		["SinkingExpScript_choice0017", "<speak>Or lower, this might also make a difference</speak>"],
+		["SinkingExpScript_choice0018", "<speak>Select the variable you would like to test</speak>"],
+		["SinkingExpScript_choice0019", "<speak>This variable is the independent variable of your experiment</speak>"],
+		["SinkingExpScript_choice0020", "<speak>The research question you have chosen is, Does the density of the water affect the time it takes for an object to sink in water?</speak>"],
+		["SinkingExpScript_choice0021", "<speak>OK!, you have chosen as your Research Question, Does the density of the water affect the time it takes for an object to sink in water?</speak>"],
+		["SinkingExpScript_choice0022", "<speak>The research question you have chosen is, Does the shape of the object affect the time it takes for an object to sink in water?</speak>"],
+		["SinkingExpScript_choice0023", "<speak>OK!, you have chosen as your Research Question, Does the shape of the object affect the time it takes for an object to sink in water?</speak>"],
+		["SinkingExpScript_choice0024", "<speak>The research question you have chosen is, Does the volume of the object affect the time it takes for an object to sink in water?</speak>"],
+		["SinkingExpScript_choice0025", "<speak>OK!, you have chosen as your Research Question, Does the volume of the object affect the time it takes for an object to sink in water?</speak>"],
+		["SinkingExpScript_choice0026", "<speak>The research question you have chosen is, Does the density of the object affect the time it takes for an object to sink in water?</speak>"],
+		["SinkingExpScript_choice0027", "<speak>OK!, you have chosen as your Research Question, Does the density of the object affect the time it takes for an object to sink in water?</speak>"]
+    ]
+}

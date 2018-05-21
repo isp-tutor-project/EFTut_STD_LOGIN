@@ -1,0 +1,48 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["AlgaeExpScript_choice0001", "<speak>Within the area of, Plant growth, please select a topic by clicking on a picture below.</speak>"], 
+		["AlgaeExpScript_choice0002", "<speak>Below are some variables that might affect the amount of algae growth in water. You can test one of these variables in your experiment</speak>"],
+		["AlgaeExpScript_choice0003", "<speak>The temperature of the water, The amount of exposure to music, The amount of carbon dioxide in the water, and the amount of direct sunlight exposure</speak>"],
+		["AlgaeExpScript_choice0004", "<speak>Let’s see how this experiment works.</speak>"],
+		["AlgaeExpScript_choice0005", "<speak>Here are all of the materials that may be necessary for this experiment, a radio, a calendar, a digital scale, a fish tank heater, fifty grams of algae, a fish tank filled with sixteen liters of water, a thermometer and a carbon dioxide machine.</speak>"],
+		["AlgaeExpScript_choice0006", "<speak>We will add fifty grams of algae to a fish tank filled with 16 liters of distilled water</speak>"],
+		["AlgaeExpScript_choice0007", "<speak>We can measure the weight of the algae growth after one week.</speak>"],
+		["AlgaeExpScript_choice0008", "<speak>Push the button in the middle of the screen to see how this experiment works</speak>"],
+		["AlgaeExpScript_choice0009", "<speak>In this experiment, there are only four things we can change, any of these might make a difference in the weight of the algae after one week, these are the four variables you can test in this experiment, the temperature of the water, which can be room temperature</speak>"],
+		["AlgaeExpScript_choice0010", "<speak>Or a warmer might make a difference</speak>"],
+		["AlgaeExpScript_choice0011", "<speak>The amount of exposure to music, which can be constant music</speak>"],
+		["AlgaeExpScript_choice0012", "<speak>Or no music might make a difference</speak>"],
+		["AlgaeExpScript_choice0013", "<speak>The amount of carbon dioxide which can be a lot</speak>"],
+		["AlgaeExpScript_choice0014", "<speak>Or none might make a difference</speak>"],
+		["AlgaeExpScript_choice0015", "<speak>And the amount of direct sunlight exposure, which can be some</speak>"],
+		["AlgaeExpScript_choice0016", "<speak>Or none, this might also make a difference</speak>"],
+		["AlgaeExpScript_choice0017", "<speak>Select the variable you would like to test</speak>"],
+		["AlgaeExpScript_choice0018", "<speak>This variable is the independent variable of your experiment</speak>"],
+		["AlgaeExpScript_choice0019", "<speak>The research question you have chosen is, does the temperature of the water affect the weight of the algae growth after one week?</speak>"],
+		["AlgaeExpScript_choice0020", "<speak>OK!, you have chosen as your Research Question, does the temperature of the water affect the weight of the algae growth after one week?</speak>"],
+		["AlgaeExpScript_choice0021", "<speak>The research question you have chosen is, does the exposure to music affect the weight of the algae growth after one week?</speak>"],
+		["AlgaeExpScript_choice0022", "<speak>OK!, you have chosen as your Research Question, does the exposure to music affect the weight of the algae growth after one week?</speak>"],
+		["AlgaeExpScript_choice0023", "<speak>The research question you have chosen is, does the amount of carbon dioxide in the water affect the weight of the algae growth after one week?</speak>"],
+		["AlgaeExpScript_choice0024", "<speak>OK!, you have chosen as your Research Question, does the amount of carbon dioxide in the water affect the weight of the algae growth after one week?</speak>"],
+		["AlgaeExpScript_choice0025", "<speak>The research question you have chosen is, does the amount of direct sunlight exposure affect the weight of the algae growth after one week?</speak>"],
+		["AlgaeExpScript_choice0026", "<speak>OK!, you have chosen as your Research Question, does the amount of direct sunlight exposure affect the weight of the algae growth after one week?</speak>"]
+    ]
+}

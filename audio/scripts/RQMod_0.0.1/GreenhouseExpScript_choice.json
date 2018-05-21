@@ -1,0 +1,49 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["GreenhouseExpScript_choice0001", "<speak>Within the area of, Plant growth, please select a topic by clicking on a picture below.</speak>"], 
+		["GreenhouseExpScript_choice0002", "<speak>Below are some variables that might affect the number of seeds produced by flowers in a greenhouse. You can test one of these variables in your experiment</speak>"],
+		["GreenhouseExpScript_choice0003", "<speak>The number of honey bees in the greenhouse, The amount of sunlight the greenhouse lets in, The amount of fertilizer, and the type of water</speak>"],
+		["GreenhouseExpScript_choice0004", "<speak>Let’s see how this experiment works.</speak>"],
+		["GreenhouseExpScript_choice0005", "<speak>Here are all of the materials that may be necessary for this experiment, a greenhouse, twelve sunflower plants, a beehive with bees, fertilizer, and water.</speak>"],
+		["GreenhouseExpScript_choice0006", "<speak>We will plant twelve sunflower plants in the ground in a greenhouse at the beginning of spring</speak>"],
+		["GreenhouseExpScript_choice0007", "<speak>The flowers will produce seeds then die by the end of the season</speak>"],
+		["GreenhouseExpScript_choice0008", "<speak>We can measure the number of seeds produced by the flowers at the end of the season</speak>"],
+		["GreenhouseExpScript_choice0009", "<speak>Push the button in the middle of the screen to see how this experiment works</speak>"],
+		["GreenhouseExpScript_choice0010", "<speak>In this experiment, there are only four things we can change, any of these might make a difference in the number of seeds produced by the flowers at the end of the season, these are the four variables you can test in this experiment, the number of honey bees in the greenhouse, which can be zero</speak>"],
+		["GreenhouseExpScript_choice0011", "<speak>Or a whole hive might make a difference</speak>"],
+		["GreenhouseExpScript_choice0012", "<speak>The amount of sunlight the greenhouse lets in which can be full sunlight</speak>"],
+		["GreenhouseExpScript_choice0013", "<speak>Or partial sunlight might make a difference</speak>"],
+		["GreenhouseExpScript_choice0014", "<speak>The amount of fertilizer which can be none</speak>"],
+		["GreenhouseExpScript_choice0015", "<speak>Or some might make a difference</speak>"],
+		["GreenhouseExpScript_choice0016", "<speak>And the type of water, which can be rain water</speak>"],
+		["GreenhouseExpScript_choice0017", "<speak>Or tap water, this might also make a difference</speak>"],
+		["GreenhouseExpScript_choice0018", "<speak>Select the variable you would like to test</speak>"],
+		["GreenhouseExpScript_choice0019", "<speak>This variable is the independent variable of your experiment</speak>"],
+		["GreenhouseExpScript_choice0020", "<speak>The research question you have chosen is, Does the number of honey bees in the greenhouse affect the number of seeds produced by flowers at the end of the season?</speak>"],
+		["GreenhouseExpScript_choice0021", "<speak>OK!, you have chosen as your Research Question, Does the number of honey bees in the greenhouse affect the number of seeds produced by flowers at the end of the season?</speak>"],
+		["GreenhouseExpScript_choice0022", "<speak>The research question you have chosen is, does the amount of sunlight the greenhouse lets in affect the number of seeds produced by flowers at the end of the season?</speak>"],
+		["GreenhouseExpScript_choice0023", "<speak>OK!, you have chosen as your Research Question, does the amount of sunlight the greenhouse lets in affect the number of seeds produced by flowers at the end of the season?</speak>"],
+		["GreenhouseExpScript_choice0024", "<speak>The research question you have chosen is, does the type of water affect the number of seeds produced by flowers at the end of the season?</speak>"],
+		["GreenhouseExpScript_choice0025", "<speak>OK!, you have chosen as your Research Question, does the type of water affect the number of seeds produced by flowers at the end of the season?</speak>"],
+		["GreenhouseExpScript_choice0026", "<speak>The research question you have chosen is, does the amount of fertilizer affect the number of seeds produced by flowers at the end of the season?</speak>"],
+		["GreenhouseExpScript_choice0027", "<speak>OK!, you have chosen as your Research Question, does the amount of fertilizer affect the number of seeds produced by flowers at the end of the season?</speak>"]
+    ]
+}

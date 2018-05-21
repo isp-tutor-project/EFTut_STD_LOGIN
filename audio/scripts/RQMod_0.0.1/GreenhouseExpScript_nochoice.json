@@ -1,0 +1,42 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["GreenhouseExpScript_nochoice0001", "<speak>Within the area of, Plant growth, we will select the topic flower reproduction. Please click on the highlighted picture below.</speak>"], 
+		["GreenhouseExpScript_nochoice0002", "<speak>Below are some variables that might affect the number of seeds produced by flowers in a greenhouse. You can test one of these variables in your experiment</speak>"],
+		["GreenhouseExpScript_nochoice0003", "<speak>The number of honey bees in the greenhouse, The amount of sunlight the greenhouse lets in, The amount of fertilizer, and the type of water</speak>"],
+		["GreenhouseExpScript_nochoice0004", "<speak>Let’s see how this experiment works.</speak>"],
+		["GreenhouseExpScript_nochoice0005", "<speak>Here are all of the materials that may be necessary for this experiment, a greenhouse, twelve sunflower plants, a beehive with bees, fertilizer, and water.</speak>"],
+		["GreenhouseExpScript_nochoice0006", "<speak>We will plant twelve sunflower plants in the ground in a greenhouse at the beginning of spring</speak>"],
+		["GreenhouseExpScript_nochoice0007", "<speak>The flowers will produce seeds then die by the end of the season</speak>"],
+		["GreenhouseExpScript_nochoice0008", "<speak>We can measure the number of seeds produced by the flowers at the end of the season</speak>"],
+		["GreenhouseExpScript_nochoice0009", "<speak>Push the button in the middle of the screen to see how this experiment works</speak>"],
+		["GreenhouseExpScript_nochoice0010", "<speak>In this experiment, there are only four things we can change, any of these might make a difference in the number of seeds produced by the flowers at the end of the season, these are the four variables we can test in this experiment, the number of honey bees in the greenhouse, which can be zero</speak>"],
+		["GreenhouseExpScript_nochoice0011", "<speak>Or a whole hive might make a difference</speak>"],
+		["GreenhouseExpScript_nochoice0012", "<speak>The amount of sunlight the greenhouse lets in which can be full sunlight</speak>"],
+		["GreenhouseExpScript_nochoice0013", "<speak>Or partial sunlight might make a difference</speak>"],
+		["GreenhouseExpScript_nochoice0014", "<speak>The amount of fertilizer which can be none</speak>"],
+		["GreenhouseExpScript_nochoice0015", "<speak>Or some might make a difference</speak>"],
+		["GreenhouseExpScript_nochoice0016", "<speak>And the type of water, which can be rain water</speak>"],
+		["GreenhouseExpScript_nochoice0017", "<speak>Or tap water, this might also make a difference</speak>"],
+		["GreenhouseExpScript_nochoice0018", "<speak>We will test the following variable, amount of sunlight the greenhouse lets in. This variable is the independent variable of the experiment. Please click on the highlighted picture below.</speak>"],
+		["GreenhouseExpScript_nochoice0019", "<speak>Our research question is, does the amount of sunlight the greenhouse lets in affect the number of seeds produced by flowers at the end of the season?</speak>"],
+		["GreenhouseExpScript_nochoice0020", "<speak>OK!, you have chosen as your Research Question, does the amount of sunlight the greenhouse lets in affect the number of seeds produced by flowers at the end of the season?</speak>"]
+    ]
+}

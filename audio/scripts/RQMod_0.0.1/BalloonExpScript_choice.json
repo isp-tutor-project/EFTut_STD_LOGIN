@@ -1,0 +1,49 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["BalloonExpScript_choice0001", "<speak>Within the area of, heat and temperature, please select a topic by clicking on a picture below.</speak>"], 
+		["BalloonExpScript_choice0002", "<speak>Below are some variables that might affect the temperature of gas in a balloon. you can test one of these variables in your experiment</speak>"],
+		["BalloonExpScript_choice0003", "<speak>The color of the balloon, the material the balloon is made of, the amount of sunlight exposure the balloon gets, and the type of chair the balloon is tied to</speak>"],
+		["BalloonExpScript_choice0004", "<speak>Let’s see how this experiment works.</speak>"],
+		["BalloonExpScript_choice0005", "<speak>Here are all of the materials that may be necessary for this experiment, a balloon, a wireless temperature reader and sensor, a chair, a stopwatch, a helium tank, and an umbrella.</speak>"],
+		["BalloonExpScript_choice0006", "<speak>We will pump five grams of helium at 15 degrees Celsius into a balloon</speak>"],
+		["BalloonExpScript_choice0007", "<speak>We will place the balloon outside for 30 minutes, The temperature of the air is 27 degrees celsius</speak>"],
+		["BalloonExpScript_choice0008", "<speak>We can measure the temperature of the gas after 30 minutes</speak>"],
+		["BalloonExpScript_choice0009", "<speak>Push the button in the middle of the screen to see how this experiment works</speak>"],
+		["BalloonExpScript_choice0011", "<speak>In this experiment, there are only four things we can change, any of these might make a difference in the temperature of gas in the balloon, these are the four variables you can test in this experiment, the color of the balloon, which can be lighter</speak>"],
+		["BalloonExpScript_choice0011", "<speak>Or darker might make a difference</speak>"],
+		["BalloonExpScript_choice0012", "<speak>The material the balloon is made of which can be foil</speak>"],
+		["BalloonExpScript_choice0013", "<speak>Or latex might make a difference</speak>"],
+		["BalloonExpScript_choice0014", "<speak>The amount of sunlight exposure the balloon gets which can be full sun</speak>"],
+		["BalloonExpScript_choice0015", "<speak>Or shade might make a difference</speak>"],
+		["BalloonExpScript_choice0016", "<speak>And the type of chair the balloon is tied to, which can be wooden chair</speak>"],
+		["BalloonExpScript_choice0017", "<speak>Or a canvas chair, this might also make a difference</speak>"],
+		["BalloonExpScript_choice0018", "<speak>Select the variable you would like to test</speak>"],
+		["BalloonExpScript_choice0019", "<speak>This variable is the independent variable of your experiment</speak>"],
+		["BalloonExpScript_choice0020", "<speak>The research question you have chosen is, Does the color of the balloon affect the gas temperature within the balloon after 30 minutes?</speak>"],
+		["BalloonExpScript_choice0021", "<speak>OK!, you have chosen as your Research Question, Does the color of the balloon affect the gas temperature within the balloon after 30 minutes?</speak>"],
+		["BalloonExpScript_choice0022", "<speak>The research question you have chosen is, Does the material the balloon is made of affect the gas temperature within the balloon after 30 minutes?</speak>"],
+		["BalloonExpScript_choice0023", "<speak>OK!, you have chosen as your Research Question, Does the material the balloon is made of affect the gas temperature within the balloon after 30 minutes?</speak>"],
+		["BalloonExpScript_choice0024", "<speak>The research question you have chosen is, Does the amount of sunlight exposure the balloon gets affect the gas temperature within the balloon after 30 minutes?</speak>"],
+		["BalloonExpScript_choice0025", "<speak>OK!, you have chosen as your Research Question, Does the amount of sunlight exposure the balloon gets affect the gas temperature within the balloon after 30 minutes?</speak>"],
+		["BalloonExpScript_choice0026", "<speak>The research question you have chosen is, Does the type of chair the balloon is tied to affect the gas temperature within the balloon after 30 minutes?</speak>"],
+		["BalloonExpScript_choice0027", "<speak>OK!, you have chosen as your Research Question, Does the type of chair the balloon is tied to affect the gas temperature within the balloon after 30 minutes?</speak>"]
+    ]
+}

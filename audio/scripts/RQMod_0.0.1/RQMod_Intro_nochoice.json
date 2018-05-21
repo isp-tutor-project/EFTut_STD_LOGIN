@@ -1,0 +1,37 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["RQMod_Intro_nochoice0001", "<speak>In this lesson we will ask you to set up and evaluate experiments.</speak>"], 
+		["RQMod_Intro_nochoice0002", "<speak>But first, we will select a general area for the experiment</speak>"],
+		["RQMod_Intro_nochoice0003", "<speak>For example, we might select the general area of psychology</speak>"],
+		["RQMod_Intro_nochoice0004", "<speak>After we select the general area, we will then select a specific topic within that area.</speak>"],
+		["RQMod_Intro_nochoice0005", "<speak>For example, within the general area of psychology, we might select the topic attention to color.</speak>"],
+		["RQMod_Intro_nochoice0006", "<speak>Within that topic, we will select a research question.</speak>"],
+		["RQMod_Intro_nochoice0007", "<speak>For example, within the topic attention to color, we might select a research question such as Does the color of the t-shirt a person is wearing affect attention?.</speak>"],
+		["RQMod_Intro_nochoice0008", "<speak>You will then set up, but not run, an experiment on the computer to answer the research question that we have selected</speak>"],
+		["RQMod_Intro_nochoice0009", "<speak>Let's begin by focusing on one area of science.</speak>"],
+		["RQMod_Intro_nochoice0010", "<speak>Here are some different areas of science</speak>"],
+		["RQMod_Intro_nochoice0011", "<speak>One area of science is Physical and Chemical changes. Within that area you could study the topics crystal growth or soda mint reactions.</speak>"],
+		["RQMod_Intro_nochoice0012", "<speak>Another area of science is Heat and Temperature. Within that area you could study the topics ice melting time or temperature of a gas.</speak>"],
+		["RQMod_Intro_nochoice0013", "<speak>Another area of science is Forces and Motion. Within that area you could study the topics the speed of balls at the bottom of ramps or time for objects to sink</speak>"],
+		["RQMod_Intro_nochoice0014", "<speak>Another area of science is Plant growth, within that area you could study the topics flower reproduction or algae growth</speak>"],
+		["RQMod_Intro_nochoice0015", "<speak>The area we will choose is Plant growth. Please click on the highlighted picture below.</speak>"]
+    ]
+}
