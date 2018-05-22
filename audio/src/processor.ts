@@ -45,7 +45,7 @@ interface ttsDesc {
 const fileList:Array<string> = [
     // "/AlgaeExpScript_choice.json",
     // "/BalloonExpScript_choice.json",
-    "/CrystalsExpScript_choice.json"
+    // "/CrystalsExpScript_choice.json"
     // "/GreenhouseExpScript_choice.json",
     // "/GreenhouseExpScript_nochoice.json",
     // "/IcemeltingExpScript_choice.json",

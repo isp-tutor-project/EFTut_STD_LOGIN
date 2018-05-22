@@ -36,6 +36,7 @@
 		["RQModIntro_choice0016", "<speak>Within the area of physical and chemical changes, please select a topic by clicking on a picture below</speak>"],
 		["RQModIntro_choice0017", "<speak>Within the area of heat and temperature, please select a topic by clicking on a picture below</speak>"],
 		["RQModIntro_choice0018", "<speak>Within the area of forces and motion, please select a topic by clicking on a picture below</speak>"],
-		["RQModIntro_choice0019", "<speak>Within the area of plant growth, please select a topic by clicking on a picture below</speak>"]
+		["RQModIntro_choice0019", "<speak>Within the area of plant growth, please select a topic by clicking on a picture below</speak>"],
+		["RQModIntro_choice0020", "<speak>If the volume is adjusted, please click on the triangle below.</speak>"]		
     ]
 }

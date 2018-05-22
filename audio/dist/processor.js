@@ -17,12 +17,12 @@
 const fileList = [
     // "/AlgaeExpScript_choice.json",
     // "/BalloonExpScript_choice.json",
-    "/CrystalsExpScript_choice.json"
+    // "/CrystalsExpScript_choice.json"
     // "/GreenhouseExpScript_choice.json",
     // "/GreenhouseExpScript_nochoice.json",
     // "/IcemeltingExpScript_choice.json",
     // "/RampsExpScript_choice.json",
-    // "/RQMod_Intro_choice.json",
+    "/RQMod_Intro_choice.json"
     // "/RQMod_Intro_nochoice.json",
     // "/SinkingExpScript_choice.json",
     // "/SodaExpScript_choice.json"
