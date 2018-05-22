@@ -1,0 +1,51 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["CrystalsExpScript_choice0001", "<speak>Within the area of, physical and chemical changes, please select a topic by clicking on a picture below.</speak>"], 
+		["CrystalsExpScript_choice0002", "<speak>Below are some variables that might affect the amount of crystal growth on a string in water. you can test one of these variables in your experiment</speak>"],
+		["CrystalsExpScript_choice0003", "<speak>Water temperature, The type of crystals, The initial amount of crystals on the string, and the type of string</speak>"],
+		["CrystalsExpScript_choice0004", "<speak>Let’s see how this experiment works.</speak>"],
+		["CrystalsExpScript_choice0005", "<speak>Here are all of the materials that may be necessary for this experiment, a glass jar, a calendar, a pencil, string, distilled water, crystals and a digital scale</speak>"],
+		["CrystalsExpScript_choice0006", "<speak>We will mix a crystal salt or sugar in water so it dissolves</speak>"],
+		["CrystalsExpScript_choice0007", "<speak>We will continue to add the crystals and mix until no more crystals can be dissolved in the water, this is the saturation point</speak>"],
+		["CrystalsExpScript_choice0008", "<speak>Then we will put a string in the water</speak>"],
+		["CrystalsExpScript_choice0009", "<speak>We can measure the weight of the crystal growth after two weeks</speak>"],
+		["CrystalsExpScript_choice0010", "<speak>Push the button in the middle of the screen to see how this experiment works</speak>"],
+		["CrystalsExpScript_choice0011", "<speak>In this experiment, there are only four things we can change, any of these might make a difference in the amount of crystal growth on a string in water, these are the four variables you can test in this experiment, the water temperature which can be cool</speak>"],
+		["CrystalsExpScript_choice0012", "<speak>Or hot might make a difference</speak>"],
+		["CrystalsExpScript_choice0013", "<speak>The type of crystal which can be salt</speak>"],
+		["CrystalsExpScript_choice0014", "<speak>Or brown sugar might make a difference</speak>"],
+		["CrystalsExpScript_choice0015", "<speak>The initial amount of crystals on the string which can be none</speak>"],
+		["CrystalsExpScript_choice0016", "<speak>Or some might make a difference</speak>"],
+		["CrystalsExpScript_choice0017", "<speak>And the type of string which can be twine</speak>"],
+		["CrystalsExpScript_choice0018", "<speak>Or yarn, this might also make a difference</speak>"],
+		["CrystalsExpScript_choice0019", "<speak>Select the variable you would like to test</speak>"],
+		["CrystalsExpScript_choice0020", "<speak>This variable is the independent variable of your experiment</speak>"],
+		["CrystalsExpScript_choice0021", "<speak>The research question you have chosen is</speak>"],
+		["CrystalsExpScript_choice0022", "<speak>Does the water temperature affect the weight of the crystal growth on a string in water after two weeks?</speak>"],
+		["CrystalsExpScript_choice0023", "<speak>OK!, you have chosen as your Research Question, does the water temperature affect the weight of the crystal growth on the string in water after two weeks?</speak>"],
+		["CrystalsExpScript_choice0024", "<speak>The research question you have chosen is, does the type of crystal affect the weight of the crystal growth on a string in water after two weeks?</speak>"],
+		["CrystalsExpScript_choice0025", "<speak>OK!, you have chosen as your Research Question, does the type of crystal affect the weight of the crystal growth on the string in water after two weeks?</speak>"],
+		["CrystalsExpScript_choice0026", "<speak>The research question you have chosen is, does the initial amount of crystals on the string affect the weight of the crystal growth on a string in water after two weeks?</speak>"],
+		["CrystalsExpScript_choice0027", "<speak>OK!, you have chosen as your Research Question, does the initial amount of crystals on the string affect the weight of the crystal growth on the string in water after two weeks?</speak>"],
+		["CrystalsExpScript_choice0028", "<speak>The research question you have chosen is, does the type of string affect the weight of the crystal growth on a string in water after two weeks?</speak>"],
+		["CrystalsExpScript_choice0029", "<speak>OK!, you have chosen as your Research Question, does the type of string affect the weight of the crystal growth on the string in water after two weeks?</speak>"]
+    ]
+}
