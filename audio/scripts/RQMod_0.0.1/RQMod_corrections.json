@@ -1,0 +1,26 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+	"utterance": [
+		["RQMod_corrections0001", "<speak>led, a </speak>"], 
+		["RQMod_corrections0002", "<speak>The staring position of the ramp, which can be in the middle</speak>"],
+		["RQMod_corrections0003", "<speak>or at the top might make a difference</speak>"],
+		["RQMod_corrections0004", "<speak>Here are all of the materials that may be necessary for this experiment. A stopwatch. A led or glass object. A graduated cylinder. And water.</speak>"]
+	]
+}

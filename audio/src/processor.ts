@@ -43,6 +43,7 @@ interface ttsDesc {
 }
 
 const fileList:Array<string> = [
+    "/RQMod_corrections.json"
     // "/AlgaeExpScript_choice.json",
     // "/BalloonExpScript_choice.json",
     // "/CrystalsExpScript_choice.json"
