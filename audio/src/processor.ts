@@ -52,54 +52,101 @@ const fileList:Array<string> = [
     // "/RQMod_Intro_choice.json",
     // "/RQMod_Intro_nochoice.json",
     // "/SinkingExpScript_choice.json",
-    "/SodaExpScript_choice.json"
+    // "/SodaExpScript_choice.json"
 ]
 
-const filePath:string = "scripts/RQMod_0.0.1";
+const filePath:string     = "scripts/RQMod_0.0.1";
+let filesRequested:number = 0;
+let filesProcessed:number = 0;
+
+function clone(obj:any):any {
+    var copy:any;
+
+    // Handle the 3 simple types, and null or undefined
+    if (null == obj || "object" != typeof obj) return obj;
+
+    // Handle Array
+    if (obj instanceof Array) {
+        copy = [];
+        for (var i = 0, len = obj.length; i < len; i++) {
+            copy[i] = clone(obj[i]);
+        }
+        return copy;
+    }
+
+    // Handle Object
+    if (obj instanceof Object) {
+        copy = {};
+        for (var attr in obj) {
+            if (obj.hasOwnProperty(attr)) copy[attr] = clone(obj[attr]);
+        }
+        return copy;
+    }
+
+    throw new Error("Unable to copy obj! Its type isn't supported.");
+}
+
 
 function synthesizeSsmlFile(fileList:Array<string>) {
 
     const textToSpeech = require('@google-cloud/text-to-speech');
     const fs = require('fs');
   
-    const client = new textToSpeech.TextToSpeechClient();
+    const client:any = new textToSpeech.TextToSpeechClient();  
   
-    let outputFile:string;
-
     for(let file of fileList) {
         
         let input:ttsDesc = JSON.parse(fs.readFileSync(filePath + file));
 
-        for(let request of input.request) {
+        for(let i1 = 0 ; i1 < input.request.length ; i1++) {
 
             for(let utterance of input.utterance) {
 
-                let nameParts:Array<string> = utterance[0].split('_');
-                let name = nameParts[0] + "_" + request.voice.ssmlGender + "_" + nameParts[1];
-
-                outputFile         = filePath + "_generated/" + name;
-                request.input.ssml = utterance[1];
-
-                console.log(`Audio content  : ${request.input.ssml}`);
-                console.log(`Written to file: ${outputFile}`);
-
-                client.synthesizeSpeech(request, (err:any, response:any) => {
-                    if (err) {
-                      console.error('ERROR:', err);
-                      return;
-                    }
+                let _request:requestType = clone(input.request[i1]);
+                let _outputFile:string;
                 
-                    fs.writeFile(outputFile, response.audioContent, 'binary', (err:string) => {
-                      if (err) {
-                        console.error('ERROR:', err);
-                        return;
-                      }
-                      console.log(`Audio content written to file: ${outputFile}`);
-                    });
-                });              
+                let nameParts:Array<string> = utterance[0].split('_');
+                let name = nameParts[0] + "_" + _request.voice.ssmlGender + "_" + nameParts[1] + ".mp3";
+
+                _outputFile         = filePath + "_generated/" + name;
+                _request.input.ssml = utterance[1];
+
+                filesRequested++;
+                synthesizeSpeech(_request, _outputFile);
             }
         }
     }
+}
+
+
+function synthesizeSpeech(request:requestType, outputFile:string) {
+
+    const textToSpeech = require('@google-cloud/text-to-speech');
+    const fs = require('fs');
+  
+    const client:any = new textToSpeech.TextToSpeechClient();  
+    
+    console.log(`Audio content  : ${request.input.ssml}`);
+    console.log(`Written to file: ${outputFile}`);
+
+    client.synthesizeSpeech(request, (err:any, response:any) => {
+        if (err) {
+          console.error('ERROR:', err);
+          return;
+        }
+    
+        filesProcessed++;
+        fs.writeFile(outputFile, response.audioContent, 'binary', (err:string) => {
+          if (err) {
+            console.error('ERROR:', err);
+            return;
+          }
+          console.log(`Audio content  : ${request.input.ssml}`);
+          console.log(`Audio content written to file: ${outputFile}`);
+          console.log(`Files Requested: ${filesRequested} -- Files Processed: ${filesProcessed}`);          
+        });
+    });              
+
 }
  
 
