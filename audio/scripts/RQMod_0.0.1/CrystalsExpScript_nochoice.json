@@ -18,7 +18,7 @@
 	],
 
     "utterance": [
-		["CrystalsExpScript_nochoice0001", "<speak>The area we will choose is physical and chemical changes. Click on the highlighted picture below.</speak>"], 
+		["CrystalsExpScript_nochoice0001", "<speak>The area we will choose is physical and chemical changes. Click on the highlighted picture below.</speak>"],
 		["CrystalsExpScript_nochoice0002", "<speak>Within the area of physical and chemical changes, we will select the topic crystal growth. Please click the highlighted picture below.</speak>"],
 		["CrystalsExpScript_nochoice0003", "<speak>Below are some variables that might affect the amount of crystal growth on a string in water.  We can test one of these variables in the experiment</speak>"],
 		["CrystalsExpScript_nochoice0004", "<speak>The water temperature, the type of crystals, the initial amount of crystals on the string and the type of string</speak>"],
@@ -38,7 +38,7 @@
 		["CrystalsExpScript_nochoice0018", "<speak>Or yarn, this might also make a difference</speak>"],
 		["CrystalsExpScript_nochoice0019", "<speak>We will test the following variable. The type of crystals on the string. This is the indepedent variable of the experiment. Please click on the highlighted button below.</speak>"],
 		["CrystalsExpScript_nochoice0021", "<speak>Our research question is: does the type of crystal affect the weight of the crystal growth on a string in water after two weeks?</speak>"],
-		["fCrystalsExpScript_nochoice0022", "<speak>OK!, we have chosen the following research Question, does the type of crystal affect the weight of the crystal growth on a string in water after two weeks?</speak>"],
+		["CrystalsExpScript_nochoice0022", "<speak>OK!, we have chosen the following research Question, does the type of crystal affect the weight of the crystal growth on a string in water after two weeks?</speak>"]
 
     ]
 }
