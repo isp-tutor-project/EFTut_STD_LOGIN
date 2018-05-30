@@ -1,0 +1,45 @@
+{
+	
+	"request": [
+	{
+		"input": {"ssml": "<content>"},
+		"voice": {"name":"en-US-Wavenet-D",
+				"languageCode": "en-US", 
+				"ssmlGender": "MALE"},
+		"audioConfig": {"audioEncoding": "MP3"}
+	},
+	{
+		"input": {"ssml": "<content>"},
+		"voice": {"name":"en-US-Wavenet-F",
+				"languageCode": "en-US", 
+				"ssmlGender": "FEMALE"},
+		"audioConfig": {"audioEncoding": "MP3"}
+	}
+],
+
+
+    "utterance": [
+		["SodaExpScript_nochoice0001", "<speak>The area we will choose is physical and chemical changes. Please click on the highlighted picture below.</speak>"], 
+		["SodaExpScript_nochoice0002", "<speak>Within the area of physical and chemical changes, we will select the topic soda mint reactions. Please click the highlighted picture below.</speak>"],
+		["SodaExpScript_nochoice0003", "<speak>Below are some variables that might affect the reaction between soda and mints. We can test one of these variables in the experiment</speak>"],
+		["SodaExpScript_nochoice0004", "<speak>The type of sweetener in the soda, The amount of caffeine in the soda, The surface area of the mint, and the amount of carbon dioxide in the soda</speak>"],
+		["SodaExpScript_nochoice0005", "<speak>Let’s see how this experiment works.</speak>"],
+		["SodaExpScript_nochoice0006", "<speak>Here are all of the materials that may be necessary for this experiment, a mint, a bottle of soda, and a ruler.</speak>"],
+		["SodaExpScript_nochoice0007", "<speak>We will put a single mint into a bottle of soda</speak>"],
+		["SodaExpScript_nochoice0008", "<speak>Bubbles forming a soda guyzer may come out of the bottle</speak>"],
+		["SodaExpScript_nochoice0009", "<speak>We can measure the height of the soda guyzer</speak>"],
+		["SodaExpScript_nochoice0010", "<speak>Push the button in the middle of the screen to see how this experiment works</speak>"],
+		["SodaExpScript_nochoice0011", "<speak>In this experiment, there are only four things we can change, any of these might make a difference in the reaction between the soda and mint, these are the four variables we can test in this experiment, the type of sweetener which can be sugar</speak>"],
+		["SodaExpScript_nochoice0012", "<speak>Or aspartame might make a difference</speak>"],
+		["SodaExpScript_nochoice0013", "<speak>The amount of caffeine in the soda which can be some</speak>"],
+		["SodaExpScript_nochoice0014", "<speak>Or none might make a difference</speak>"],
+		["SodaExpScript_nochoice0015", "<speak>The surface texture of the mint which can be rough</speak>"],
+		["SodaExpScript_nochoice0016", "<speak>Or smooth might make a difference</speak>"],
+		["SodaExpScript_nochoice0017", "<speak>And the amount of carbon dioxide in the soda which can be higher</speak>"],
+		["SodaExpScript_nochoice0018", "<speak>Or lower, this might also make a difference</speak>"],
+		["SodaExpScript_nochoice0019", "<speak>We will test the following variable. The amount of carbon dioxide in the soda. This is the indepedent variable of the experiment. Please click on the highlighted button below.</speak>"],
+		["SodaExpScript_nochoice0021", "<speak>Our research question is: Does the amount of carbon dioxide in the soda affect the strength of the reaction between soda and mints?</speak>"],
+		["SodaExpScript_nochoice0022", "<speak>OK!, we have chosen the following research Question, Does the amount of carbon dioxide in the soda affect the strength of the reaction between soda and mints?</speak>"],
+
+    ]
+}
