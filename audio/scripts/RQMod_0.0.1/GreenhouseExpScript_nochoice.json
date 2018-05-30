@@ -19,7 +19,7 @@
 
     "utterance": [
 		["GreenhouseExpScript_nochoice0001", "<speak>Within the area of, Plant growth, we will select the topic flower reproduction. Please click on the highlighted picture below.</speak>"], 
-		["GreenhouseExpScript_nochoice0002", "<speak>Below are some variables that might affect the number of seeds produced by flowers in a greenhouse. You can test one of these variables in your experiment</speak>"],
+		["GreenhouseExpScript_nochoice0002", "<speak>Below are some variables that might affect the number of seeds produced by flowers in a greenhouse. We can test one of these variables in the experiment</speak>"],
 		["GreenhouseExpScript_nochoice0003", "<speak>The number of honey bees in the greenhouse, The amount of sunlight the greenhouse lets in, The amount of fertilizer, and the type of water</speak>"],
 		["GreenhouseExpScript_nochoice0004", "<speak>Let’s see how this experiment works.</speak>"],
 		["GreenhouseExpScript_nochoice0005", "<speak>Here are all of the materials that may be necessary for this experiment, a greenhouse, twelve sunflower plants, a beehive with bees, fertilizer, and water.</speak>"],
@@ -35,7 +35,7 @@
 		["GreenhouseExpScript_nochoice0015", "<speak>Or some might make a difference</speak>"],
 		["GreenhouseExpScript_nochoice0016", "<speak>And the type of water, which can be rain water</speak>"],
 		["GreenhouseExpScript_nochoice0017", "<speak>Or tap water, this might also make a difference</speak>"],
-		["GreenhouseExpScript_nochoice0018", "<speak>We will test the following variable, amount of sunlight the greenhouse lets in. This variable is the independent variable of the experiment. Please click on the highlighted picture below.</speak>"],
+		["GreenhouseExpScript_nochoice0018", "<speak>We will test the following variable, amount of sunlight the greenhouse lets in. This variable is the independent variable of the experiment. Please click on the highlighted button below.</speak>"],
 		["GreenhouseExpScript_nochoice0019", "<speak>Our research question is, does the amount of sunlight the greenhouse lets in affect the number of seeds produced by flowers at the end of the season?</speak>"],
 		["GreenhouseExpScript_nochoice0020", "<speak>OK!, you have chosen as your Research Question, does the amount of sunlight the greenhouse lets in affect the number of seeds produced by flowers at the end of the season?</speak>"]
     ]
