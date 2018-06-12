@@ -1,0 +1,44 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["SinkingExpScript_choice0001", "<speak>Within the area of forces and motion, we will select the topic time for objects to sink. Please click on the highlighted picture below.</speak>"], 
+		["SinkingExpScript_choice0002", "<speak>Below are some variables that might affect the time it takes for objects to sink in water. we can test one of these variables in the experiment</speak>"],
+		["SinkingExpScript_choice0003", "<speak>The density of the water, the shape of the object, the volume of the object, and the density of the object</speak>"],
+		["SinkingExpScript_choice0004", "<speak>Let’s see how this experiment works.</speak>"],
+		["SinkingExpScript_choice0005", "<speak>Here are all of the materials that may be necessary for this experiment, a stopwatch, a lead or glass object, and a graduated cylinder and water.</speak>"],
+		["SinkingExpScript_choice0006", "<speak>We will place an object into a graduated cylinder filled with water.</speak>"],
+		["SinkingExpScript_choice0007", "<speak>It will sink to the bottom.</speak>"],
+		["SinkingExpScript_choice0008", "<speak>We can measure the time it takes for the object to sink in water.</speak>"],
+		["SinkingExpScript_choice0009", "<speak>Push the button in the middle of the screen to see how this experiment works</speak>"],
+		["SinkingExpScript_choice0010", "<speak>In this experiment, there are only four things we can change, any of these might make a difference in time it takes for objects to sink in water, these are the four variables we can test in this experiment, the density of the water, which can be lower</speak>"],
+		["SinkingExpScript_choice0011", "<speak>Or higher might make a difference</speak>"],
+		["SinkingExpScript_choice0012", "<speak>The shape of the object which can be a sphere</speak>"],
+		["SinkingExpScript_choice0013", "<speak>Or teer-shaped might make a difference</speak>"],
+		["SinkingExpScript_choice0014", "<speak>The volume of the object which can be smaller</speak>"],
+		["SinkingExpScript_choice0015", "<speak>Or larger make a difference</speak>"],
+		["SinkingExpScript_choice0016", "<speak>And the density of the object, which can be higher</speak>"],
+		["SinkingExpScript_choice0017", "<speak>Or lower, this might also make a difference</speak>"],
+		["SinkingExpScript_choice0018", "<speak>We will test the following variable, density of the water.</speak>"],
+		["SinkingExpScript_choice0019", "<speak>This variable is the independent variable of your experiment. Please click on the highlighted button below</speak>"],
+		["SinkingExpScript_choice0020", "<speak>The research question we have chosen is, Does the density of the water affect the time it takes for an object to sink in water?</speak>"],
+		["SinkingExpScript_choice0021", "<speak>OK!, we have chosen as our Research Question, Does the density of the water affect the time it takes for an object to sink in water?</speak>"]
+		
+    ]
+}

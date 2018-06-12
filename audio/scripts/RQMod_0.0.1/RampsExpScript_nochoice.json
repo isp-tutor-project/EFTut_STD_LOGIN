@@ -1,0 +1,50 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["RampsExpScript_choice0001", "<speak>The area we will choose is forces and motion, Please click on the highlighted picture below.</speak>"], 
+		["RampsExpScript_choice00022","<speak>Within the area of forces and motion we will select the topic speed of balls at the bottom of ramps. Please click on the highlighted picture below.</speak>"], 
+		["RampsExpScript_choice0002", "<speak>Below are some variables that might affect the speed of balls at the bottom of ramps. you can test one of these variables in the experiment</speak>"],
+		["RampsExpScript_choice0003", "<speak>The slope of the ramp, the color of the ball, the starting position of the ball, and the surface texture of the ramp</speak>"],
+		["RampsExpScript_choice0004", "<speak>Let’s see how this experiment works.</speak>"],
+		["RampsExpScript_choice0005", "<speak>Here are all of the materials that may be necessary for this experiment, a speedometer, a ramp, and a ball.</speak>"],
+		["RampsExpScript_choice0006", "<speak>We will place a ball on the ramp.</speak>"],
+		["RampsExpScript_choice0007", "<speak>The ball will roll down the ramp.</speak>"],
+		["RampsExpScript_choice0008", "<speak>We will measure the balls speed at the bottom of the ramp.</speak>"],
+		["RampsExpScript_choice0009", "<speak>Push the button in the middle of the screen to see how this experiment works</speak>"],
+		["RampsExpScript_choice0010", "<speak>In this experiment, there are only four things we can change, any of these might make a difference in the speed of the ball at the bottom of the ramp, these are the four variables you can test in this experiment, the slope of the ramp, which can be steep</speak>"],
+		["RampsExpScript_choice0011", "<speak>Or not steep might make a difference</speak>"],
+		["RampsExpScript_choice0012", "<speak>The color of the ball which can be yellow</speak>"],
+		["RampsExpScript_choice0013", "<speak>Or pink might make a difference</speak>"],
+		["RampsExpScript_choice0014", "<speak>The starting position of the ball which can be in the middle</speak>"],
+		["RampsExpScript_choice0015", "<speak>Or at the top might make a difference</speak>"],
+		["RampsExpScript_choice0016", "<speak>And the surface texture of the ramp, which can be rough</speak>"],
+		["RampsExpScript_choice0017", "<speak>Or smooth, this might also make a difference</speak>"],
+		["RampsExpScript_choice0018", "<speak>We will test the following variable, the slope of the ramp. </speak>"],
+		["RampsExpScript_choice0019", "<speak>This variable is the independent variable of your experiment. please click on the highlighted button below</speak>"],
+		["RampsExpScript_choice0020", "<speak> The research question we have chosen is, Does the slope of the ramp affect the speed of the ball at the bottom of the ramp?</speak>"],
+		["RampsExpScript_choice0021", "<speak>OK!, we have chosen as our Research Question, Does the slope of the ramp affect the speed of the ball at the bottom of the ramp?</speak>"]
+		
+	]
+
+}
+
+
+
+
