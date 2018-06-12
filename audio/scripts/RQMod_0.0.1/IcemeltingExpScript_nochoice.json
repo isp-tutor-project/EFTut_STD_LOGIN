@@ -1,0 +1,49 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["IcemeltingExpScript_choice0001", "<speak>Within the area of, heat and temperature, we will select the topic ice melting time. Please click on the highlighted picture below.</speak>"], 
+		["IcemeltingExpScript_choice0002", "<speak>Below are some variables that might affect the time it takes for an ice cube to melt in water. we can test one of these variables in the experiment</speak>"],
+		["IcemeltingExpScript_choice0003", "<speak>The initial temperature of the ice cube, The initial temperature of the water, The pattern on the glass, and the shape of the glass</speak>"],
+		["IcemeltingExpScript_choice0004", "<speak>Let’s see how this experiment works.</speak>"],
+		["IcemeltingExpScript_choice0005", "<speak>Here are all of the materials that may be necessary for this experiment, a thermometer, glass cups, ice cubes and ice bucket, water and a digital clock.</speak>"],
+		["IcemeltingExpScript_choice0006", "<speak>We will place an ice cube in a glass filled with 237 milliters of water</speak>"],
+		["IcemeltingExpScript_choice0007", "<speak>The ice cube will eventually completely melt</speak>"],
+		["IcemeltingExpScript_choice0008", "<speak>We can measure the time it takes for the ice cube to melt in water</speak>"],
+		["IcemeltingExpScript_choice0009", "<speak>Push the button in the middle of the screen to see how this experiment works</speak>"],
+		["IcemeltingExpScript_choice0010", "<speak>In this experiment, there are only four things we can change, any of these might make a difference in the time it takes for the ice cube to melt in water, these are the four variables we can test in this experiment, the initial temperature of the ice cube which can be zero degrees Celsius</speak>"],
+		["IcemeltingExpScript_choice0011", "<speak>Or negative twenty degrees celsius might make a difference</speak>"],
+		["IcemeltingExpScript_choice0012", "<speak>The initial temperature of the water which can be cold</speak>"],
+		["IcemeltingExpScript_choice0013", "<speak>Or hot might make a difference</speak>"],
+		["IcemeltingExpScript_choice0014", "<speak>The pattern on the glass which can be striped</speak>"],
+		["IcemeltingExpScript_choice0015", "<speak>Or plain might make a difference</speak>"],
+		["IcemeltingExpScript_choice0016", "<speak>And the shape of the glass which can be shorter</speak>"],
+		["IcemeltingExpScript_choice0017", "<speak>Or taller, this might also make a difference</speak>"],
+		["IcemeltingExpScript_choice0018", "<speak>We will test the following variable, the initial temperature of the ice cube.</speak>"],
+		["IcemeltingExpScript_choice0019", "<speak>This variable is the independent variable of your experiment. Please click on the highlighted button below.</speak>"],
+		["IcemeltingExpScript_choice0020", "<speak>The research question we have chosen is, Does the initial temperature of the ice cube affect the time it takes for an ice cube to melt in water?</speak>"],
+		["IcemeltingExpScript_choice0021", "<speak>OK!, we have chosen as our Research Question, Does the initial temperature of the ice cube affect the time it takes for an ice cube to melt in water?</speak>"],
+		["IcemeltingExpScript_choice0022", "<speak>The research question we have chosen is, Does the initial temperature of the water affect the time it takes for an ice cube to melt in water?</speak>"],
+		["IcemeltingExpScript_choice0023", "<speak>OK!, we have chosen as our Research Question, Does the initial temperature of the water affect the time it takes for an ice cube to melt in water?</speak>"],
+		["IcemeltingExpScript_choice0024", "<speak>The research question we have chosen is, Does the pattern on the glass affect the time it takes for an ice cube to melt in water?</speak>"],
+		["IcemeltingExpScript_choice0025", "<speak>OK!, we have chosen as our Research Question, Does the pattern on the glass affect the time it takes for an ice cube to melt in water?</speak>"],
+		["IcemeltingExpScript_choice0026", "<speak>The research question we have chosen is, Does the shape of the glass affect the time it takes for an ice cube to melt in water?</speak>"],
+		["IcemeltingExpScript_choice0027", "<speak>OK!, we have chosen as our Research Question, Does the shape of the glass affect the time it takes for an ice cube to melt in water?</speak>"]
+    ]
+}

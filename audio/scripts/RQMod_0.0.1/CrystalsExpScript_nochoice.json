@@ -37,8 +37,8 @@
 		["CrystalsExpScript_nochoice0017", "<speak>And the type of string which can be twine</speak>"],
 		["CrystalsExpScript_nochoice0018", "<speak>Or yarn, this might also make a difference</speak>"],
 		["CrystalsExpScript_nochoice0019", "<speak>We will test the following variable. The type of crystals on the string. This is the indepedent variable of the experiment. Please click on the highlighted button below.</speak>"],
-		["CrystalsExpScript_nochoice0021", "<speak>Our research question is: does the type of crystal affect the weight of the crystal growth on a string in water after two weeks?</speak>"],
-		["CrystalsExpScript_nochoice0022", "<speak>OK!, we have chosen the following research Question, does the type of crystal affect the weight of the crystal growth on a string in water after two weeks?</speak>"]
+		["CrystalsExpScript_nochoice0021", "<speak>The research question we have chosen is does the type of crystal affect the weight of the crystal growth on a string in water after two weeks?</speak>"],
+		["CrystalsExpScript_nochoice0022", "<speak>OK!, we have chosen as our research Question, does the type of crystal affect the weight of the crystal growth on a string in water after two weeks?</speak>"]
 
     ]
 }
