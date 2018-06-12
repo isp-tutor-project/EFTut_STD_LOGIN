@@ -11,14 +11,23 @@ namespace EFTut_Suppl {
 	
         public $oncreate() {
             this["SPurpleCircle"].xname = "SPurpleCircle";
+            this["SInput"].xname = "SInput";
+            this["SRect1"].xname = "SRect1";
         }
 
+        public $onenter() {
+            this["SInput"].setFocus(true);
+            this["SInput"].setEnabled(true);
+        }
+        
         public $preenter() {
             this.connectNavButton(CONST.NEXTSCENE, "SPurpleCircle");
             this.connectGraph("graphname");
         }
 
         public $preexit() {
+            this["SInput"].setFocus(false);
+            this["SInput"].setEnabled(false);
         }
 
         public $demoinit() {
@@ -44,6 +53,8 @@ namespace EFTut_Suppl {
         public $oncreate() {
 
             this["SPurpleCircle"].xname = "SPurpleCircle";
+            this["SInput"].xname = "SInput";
+            this["SRect1"].xname = "SRect1";
         }
 
         public $preenter() {

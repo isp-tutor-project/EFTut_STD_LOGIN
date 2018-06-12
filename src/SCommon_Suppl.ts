@@ -15,10 +15,6 @@ namespace EFTut_Suppl {
         public $var3:string = "test3";
         public $var4:string = "";
 
-
-
-
-
         // Place empty defaults here - these just avoid unnecessary exceptions for missing methods.
 
         public $oncreate() { /* Empty */  }

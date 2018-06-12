@@ -50,9 +50,9 @@
 			"reuse":true,			
 			"scenes":		
 			[
-				{"title":"", "page":"", "name":"SSoundCheck", 		"classname":"SoundCheck"	, "features":"null", "enqueue":"false", "create":"false", "visible":"true", "persist":"false", "ischeckpnt":"true", "object":"null"},
-				{"title":"", "page":"", "name":"SSignIn", 			"classname":"SignIn"		, "features":"null", "enqueue":"false", "create":"false", "visible":"true", "persist":"false", "ischeckpnt":"true", "object":"null"},		
-				{"title":"", "page":"", "name":"SHeadPhoneCheck"  , "classname":"HeadPhoneCheck", "features":"null", "enqueue":"true" , "create":"false", "visible":"true", "persist":"false", "ischeckpnt":"true", "object":"null"}
+				{"title":"", "page":"", "name":"SoundCheck", 		"classname":"EFMod_SignIn.SoundCheck"	, "features":"null", "enqueue":"false", "create":"false", "visible":"true", "persist":"false", "ischeckpnt":"true", "object":"null"},
+				{"title":"", "page":"", "name":"SignIn", 			"classname":"EFMod_SignIn.SignIn"		, "features":"null", "enqueue":"false", "create":"false", "visible":"true", "persist":"false", "ischeckpnt":"true", "object":"null"},		
+				{"title":"", "page":"", "name":"HeadPhoneCheck"  , "classname":"EFMod_SignIn.HeadPhoneCheck", "features":"null", "enqueue":"true" , "create":"true", "visible":"true", "persist":"false", "ischeckpnt":"true", "object":"null"}
 			]
 		},	
 			
@@ -62,9 +62,9 @@
 			"reuse":true,
 			"scenes":		
 			[
-				{"title":"Start of Tutor", "page":"", "name":"Scene1"   , "classname":"Scene1", "features":"", "enqueue":"true", "create":"false", "persist":"false", "ischeckpnt":"true", "object":"null"},
-				{"title":"Start of Tutor", "page":"", "name":"Scene2"   , "classname":"Scene2", "features":"", "enqueue":"true", "create":"false", "persist":"false", "ischeckpnt":"true", "object":"null"},
-				{"title":"Start of Tutor", "page":"", "name":"Scene3"   , "classname":"Scene3", "features":"", "enqueue":"true", "create":"false", "persist":"false", "ischeckpnt":"true", "object":"null"}
+				{"title":"Start of Tutor", "page":"", "name":"Scene1"   , "classname":"EFMod_SceneTest.Scene1", "features":"", "enqueue":"true", "create":"false", "persist":"false", "ischeckpnt":"true", "object":"null"},
+				{"title":"Start of Tutor", "page":"", "name":"Scene2"   , "classname":"EFMod_SceneTest.Scene2", "features":"", "enqueue":"true", "create":"false", "persist":"false", "ischeckpnt":"true", "object":"null"},
+				{"title":"Start of Tutor", "page":"", "name":"Scene3"   , "classname":"EFMod_SceneTest.Scene3", "features":"", "enqueue":"true", "create":"false", "persist":"false", "ischeckpnt":"true", "object":"null"}
 			]
 		},
 	
@@ -74,7 +74,7 @@
 			"reuse":true,
 			"scenes":		
 			[	
-				{"title":"", "page":"", "name":"Scene4"  , "classname":"Scene4", "features":"" , "enqueue":"true", "create":"false", "persist":"false", "ischeckpnt":"true", "object":"null"}
+				{"title":"", "page":"", "name":"Scene4"  , "classname":"EFMod_SceneTest.Scene4", "features":"" , "enqueue":"true", "create":"false", "persist":"false", "ischeckpnt":"true", "object":"null"}
 			]
 		}		
 		
