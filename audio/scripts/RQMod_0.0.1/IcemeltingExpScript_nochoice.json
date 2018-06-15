@@ -39,11 +39,7 @@
 		["IcemeltingExpScript_choice0019", "<speak>This variable is the independent variable of your experiment. Please click on the highlighted button below.</speak>"],
 		["IcemeltingExpScript_choice0020", "<speak>The research question we have chosen is, Does the initial temperature of the ice cube affect the time it takes for an ice cube to melt in water?</speak>"],
 		["IcemeltingExpScript_choice0021", "<speak>OK!, we have chosen as our Research Question, Does the initial temperature of the ice cube affect the time it takes for an ice cube to melt in water?</speak>"],
-		["IcemeltingExpScript_choice0022", "<speak>The research question we have chosen is, Does the initial temperature of the water affect the time it takes for an ice cube to melt in water?</speak>"],
-		["IcemeltingExpScript_choice0023", "<speak>OK!, we have chosen as our Research Question, Does the initial temperature of the water affect the time it takes for an ice cube to melt in water?</speak>"],
-		["IcemeltingExpScript_choice0024", "<speak>The research question we have chosen is, Does the pattern on the glass affect the time it takes for an ice cube to melt in water?</speak>"],
-		["IcemeltingExpScript_choice0025", "<speak>OK!, we have chosen as our Research Question, Does the pattern on the glass affect the time it takes for an ice cube to melt in water?</speak>"],
-		["IcemeltingExpScript_choice0026", "<speak>The research question we have chosen is, Does the shape of the glass affect the time it takes for an ice cube to melt in water?</speak>"],
-		["IcemeltingExpScript_choice0027", "<speak>OK!, we have chosen as our Research Question, Does the shape of the glass affect the time it takes for an ice cube to melt in water?</speak>"]
+		["IcemeltingExpScript_choice0022", "<speak>The research question we have chosen is, Does the initial temperature of the water affect the time it takes for an ice cube to melt in water?</speak>"]
+		
     ]
 }

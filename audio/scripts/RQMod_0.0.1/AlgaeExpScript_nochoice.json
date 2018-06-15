@@ -34,15 +34,10 @@
 		["AlgaeExpScript_choice0014", "<speak>Or none might make a difference</speak>"],
 		["AlgaeExpScript_choice0015", "<speak>And the amount of direct sunlight exposure, which can be some</speak>"],
 		["AlgaeExpScript_choice0016", "<speak>Or none, this might also make a difference</speak>"],
-		["AlgaeExpScript_choice0017", "<speak>We will test the following variable, temperature of the water.</speak>"],
+		["AlgaeExpScript_choice0017", "<speak>We will test the following variable, exposure to music.</speak>"],
 		["AlgaeExpScript_choice0018", "<speak>This variable is the independent variable of the experiment. Please click on the highlighted button below</speak>"],
-		["AlgaeExpScript_choice0019", "<speak>The research question we have chosen is does the temperature of the water affect the weight of the algae growth after one week?</speak>"],
-		["AlgaeExpScript_choice0020", "<speak>OK!, we have chosen as our Research Question, does the temperature of the water affect the weight of the algae growth after one week?</speak>"],
-		["AlgaeExpScript_choice0021", "<speak>The research question we have chosen is, does the exposure to music affect the weight of the algae growth after one week?</speak>"],
-		["AlgaeExpScript_choice0022", "<speak>OK!, we have chosen as our Research Question, does the exposure to music affect the weight of the algae growth after one week?</speak>"],
-		["AlgaeExpScript_choice0023", "<speak>The research question we have chosen is, does the amount of carbon dioxide in the water affect the weight of the algae growth after one week?</speak>"],
-		["AlgaeExpScript_choice0024", "<speak>OK!, we have chosen as our Research Question, does the amount of carbon dioxide in the water affect the weight of the algae growth after one week?</speak>"],
-		["AlgaeExpScript_choice0025", "<speak>The research question we have chosen is, does the amount of direct sunlight exposure affect the weight of the algae growth after one week?</speak>"],
-		["AlgaeExpScript_choice0026", "<speak>OK!, we have chosen as our Research Question, does the amount of direct sunlight exposure affect the weight of the algae growth after one week?</speak>"]
+		["AlgaeExpScript_choice0019", "<speak>The research question we have chosen is does exposure to music affect the weight of the algae growth after one week?</speak>"],
+		["AlgaeExpScript_choice0020", "<speak>OK!, we have chosen as our Research Question, does exposure to music affect the weight of the algae growth after one week?</speak>"]
+		
     ]
 }

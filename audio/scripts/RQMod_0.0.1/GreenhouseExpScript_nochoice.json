@@ -35,8 +35,8 @@
 		["GreenhouseExpScript_nochoice0015", "<speak>Or some might make a difference</speak>"],
 		["GreenhouseExpScript_nochoice0016", "<speak>And the type of water, which can be rain water</speak>"],
 		["GreenhouseExpScript_nochoice0017", "<speak>Or tap water, this might also make a difference</speak>"],
-		["GreenhouseExpScript_nochoice0018", "<speak>We will test the following variable, amount of sunlight the greenhouse lets in. This variable is the independent variable of the experiment. Please click on the highlighted button below.</speak>"],
-		["GreenhouseExpScript_nochoice0019", "<speak>The research question we have chosen is, does the amount of sunlight the greenhouse lets in affect the number of seeds produced by flowers at the end of the season?</speak>"],
-		["GreenhouseExpScript_nochoice0020", "<speak>OK!, we have chosen as our Research Question, does the amount of sunlight the greenhouse lets in affect the number of seeds produced by flowers at the end of the season?</speak>"]
+		["GreenhouseExpScript_nochoice0018", "<speak>We will test the following variable, the number of honey bees in the greenhouse. This variable is the independent variable of the experiment. Please click on the highlighted button below.</speak>"],
+		["GreenhouseExpScript_nochoice0019", "<speak>The research question we have chosen is, does the number of honey bees in the greenhouse affect the number of seeds produced by flowers at the end of the season?</speak>"],
+		["GreenhouseExpScript_nochoice0020", "<speak>OK!, we have chosen as our Research Question, does the number of honey bees in  the greenhouse  affect the number of seeds produced by flowers at the end of the season?</speak>"]
     ]
 }
