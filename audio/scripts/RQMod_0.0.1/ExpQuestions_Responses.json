@@ -1,0 +1,65 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["Question_0001", "<speak>Is this a good way to design an experiment?</speak>"], 
+		["response_0001inc", "Yes"],
+		["response_0001cor", "No"],
+		["Question_0002", "<speak>]Why did you say it was not a good way? </speak>"],
+		["response_0002_inc", "All four variables should be the same for both conditions., Because what we are testing won't make a difference., The conditions are not set up to make the best outcomes (or results)."],
+		["response_0002_cor", "Everything is different, so you can't tell if the variable we're testing will make a difference., Everything other than the variable we're testing should be the same."],
+		["Question_0003", "<speak>Why is this actually NOT a good experiment?</speak>"],
+		["response_0003_cor", "Everything is different, so you can't tell if the variable we're testing will make a difference., Everything other than the variable we're testing should be the same."],
+		["response_0003_inc", "All four variables should be the same for both conditions., Because what we are testing won't make a difference., The conditions are not set up to make the best outcomes )or results)." ],
+		["Question_0004", "<speak>IF: Results for Condition 1 do not equal Results for Condition 2...Could you tell for sure that the {{unchosenvar1a}} caused the difference?</speak>"],
+		["response_0004_inc", "Yes"],
+		["response_0004_cor", "No"],
+		["Question_0005", "<speak>Why did you say you could NOT know for sure?</speak>"],
+		["response_0005_inc", "Everything should be the same so the results will be the same in both conditions., The variable we're testing doesn't really make a difference (or have an effect)."],
+		["response_0005_cor", "Since everything is different, something else might have caused the difference., Becuase you need to have everything the same except for the varaible being tested."],
+		["Question_0006", "<speak>Explain to the students why this is now a good way to find out whether or not if the {{unchosenvar1a}} makes a difference.</speak>"],
+		["response_0006_inc", "The results will be different across conditions., The variable we're testing is different (it doesn't matter how the other varaibles are set up)."],
+		["response_0006_cor", "Only the variable we are testing is different., Ony the variable we are testing can cause a difference in outcomes."],
+		["Question_0007_2", "<speak>Is this a good way to design an experiment? </speak>"],
+		["response_0007inc", "Yes"],
+		["response_0007cor", "No"],
+		["Question_0008_2", "<speak>Why did you say it was not a good way?</speak>"],
+		["response_0008_2inc", "I don't know., The variable we are testing won't make a difference. The conditions are not set up to make the best outcomes (or results) in both conditions., The conditions should be identical so the resutls are the same."],
+		["response_0008_2cor", "Everything other than what is being tested should be the same., Something else is different, so you can't tell what effect the variable we're testing has."],
+		["Question_0009_2", "<speak>What is the best reason for why this is actually not a good experiment?</speak>"],
+		["response_0009_2inc", "I don't know., The variable we are testing won't make a difference. The conditions are not set up to make the best outcomes (or results) in both conditions., The conditions should be identical so the resutls are the same."],
+		["response_0009_2cor", "Everything other than what is being tested should be the same., Something else is different, so you can't tell what effect the variable we're testing has."],
+		["Question_0010_2", "<speak>Could you tell for sure that the {{unchosenvar2a}} caused the difference?</speak>"],
+		["response_0010_2inc", "Yes"],
+		["response_0010_2cor", "No"],
+		["Question_0011_2", "<speak>Why did you say you could not know for sure?</speak>"],
+		["response_0011_2inc", "Because everything should be different., The conditions are not set up to make the best outcomes (or results) in one or both conditions., The conditions should be set up exactly the same way so the results are the same. I don't know."],
+		["response_0011_2cor", "Because you need to have everything the same except for the variable that is being tested., Since some of the other variables are also different, they might have caused the difference."],
+		["Question_0012_2", "<speak>What's the best reason for why you actually could not tell for sure?</speak>"],
+		["response_0012_2inc", "Because everything should be different., The conditions are not set up to make the best outcomes (or results) in one or both conditions., The conditions should be set up exactly the same way so the results are the same. I don't know."],
+		["response_0012_2cor", "Because you need to have everything the same except for the variable that is being tested., Since some of the other variables are also different, they might have caused the difference."],
+		["Question_0013_2", "Explain to the sudents why this is now a good way to find out whether or not if the {{unhosenvar2a}} makes a differenec or not."],
+		["response_0013_2inc", "I don't know/I think it might not really be a good way., The variable we're testing will cause a difference. The varaible we're testing is different (it doesn't matter how the other variables are set up.),The results (or outcomes) will be different across conditions., I don't know."],
+		["response_0013_2cor", "The variable we're testing is different and everything else is the same. Only the variable we're testing could cause a difference in results."]
+	
+		
+
+		
+    ]
+}

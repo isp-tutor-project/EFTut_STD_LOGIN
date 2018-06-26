@@ -1,0 +1,38 @@
+{
+
+	"request": [
+    	{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-D",
+					"languageCode": "en-US", 
+					"ssmlGender": "MALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		},
+		{
+			"input": {"ssml": "<content>"},
+			"voice": {"name":"en-US-Wavenet-F",
+					"languageCode": "en-US", 
+					"ssmlGender": "FEMALE"},
+			"audioConfig": {"audioEncoding": "MP3"}
+		}
+	],
+
+    "utterance": [
+		["TedIntroScript_0001", "<speak>Welcome! You are about to begin the Ted tutor.</speak>"], 
+		["TedIntroScript_0002", "<speak>] With it you will learn a procedure for how to design good science experiments. </speak>"],
+		["TedIntroScript_0003", "<speak>This procedure is called the control fo variables strategy or vary one thing at time.</speak>"],
+		["TedIntroScript_0004", "<speak>Ted is a computer tutor. Like a real teacher, ted provides instruction and feedback. Also like real teacher, Ted looks at your answers to see how well you are learning how to design good experiments.</speak>"],
+		["TedIntroScript_0005", "<speak>If you answer Ted's questions correctly, it will assume that you have learned the material and are ready to advance.</speak>"],
+		["TedIntroScript_0006", "<speak>If you answer Ted's questions incorrectly, it will assume that you need extra help and more practice.</speak>"],
+		["TedIntroScript_0007", "<speak>You will move through ted's instruction at your own pace. You may find that sometimes you go backwards and repeat questions</speak>"],
+		["TedIntroScript_0008", "<speak>This is because Ted as determined, based on you answers, that you need more practice before you can move forward.</speak>"],
+		["TedIntroScript_0009", "<speak>The only way for Ted to know how much you are learning is through your answers</speak>"],
+		["TedIntroScript_0010", "<speak>to its questions</speak>"],
+		["TedIntroScript_0011", "<speak>For this reason it's important to make sure you understand what each question is asking and to answer carefully</speak>"],
+		["TedIntroScript_0012", "<speak>Let's begin</speak>"]
+	
+		
+
+		
+    ]
+}
